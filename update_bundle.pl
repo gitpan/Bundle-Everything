@@ -35,7 +35,7 @@ my $bundle;
 
 }
 
-$bundle =~ s/=head1 CONTENTS.*=head1/=head1 CONTENTS\n$list=head1/s;
+$bundle =~ s/=head1 CONTENTS.*?=head1/=head1 CONTENTS\n$list=head1/s;
 open E, ">Everything.pm";
 print E $bundle;
 close E;
