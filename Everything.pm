@@ -1,6 +1,6 @@
 package Bundle::Everything;
 
-$VERSION = '0.01'
+$VERSION = '0.02'
 
 1;
 
@@ -17,6 +17,7 @@ C<perl -MCPAN -e 'install Bundle::Everything'>
 This probably won't actually work, but it's cool anyway.
 
 =head1 CONTENTS
+AFS
 
 AI::Categorize
 
@@ -27,6 +28,8 @@ AI::Gene::Sequence
 AI::Gene::Simple
 
 AI::NeuralNet
+
+AI::NeuralNet::Kohonen
 
 AI::NeuralNet::SOM
 
@@ -40,13 +43,21 @@ Ace
 
 Acme::Buffy
 
-Agent
+Acme::Chef
+
+Acme::Morse::Audible
+
+Acme::Playmate
+
+Algorithm::Cluster
 
 Algorithm::Diff
 
 Algorithm::Graphs::TransitiveClosure
 
 Algorithm::LUHN
+
+Algorithm::Merge
 
 Algorithm::Numerical::Sample
 
@@ -60,11 +71,7 @@ Alias
 
 AltaVista::PerlSDK
 
-AltaVista::SearchSDK
-
 Alzabo
-
-AnyDBM_File
 
 Apache
 
@@ -72,11 +79,7 @@ Apache::ACEProxy
 
 Apache::ASP
 
-Apache::ASP::Lite
-
 Apache::AccessLimitNum
-
-Apache::AdBanner
 
 Apache::AdBlocker
 
@@ -91,6 +94,8 @@ Apache::AntiSpam
 Apache::Archive
 
 Apache::AuthAny
+
+Apache::AuthChecker
 
 Apache::AuthCookie
 
@@ -107,8 +112,6 @@ Apache::AuthPerLDAP
 Apache::AuthenCache
 
 Apache::AuthenDBI
-
-Apache::AuthenGSS
 
 Apache::AuthenIMAP
 
@@ -128,8 +131,6 @@ Apache::AuthzAge
 
 Apache::AuthzDBI
 
-Apache::AuthzDCE
-
 Apache::AuthzGender
 
 Apache::AuthzNIS
@@ -142,35 +143,21 @@ Apache::AutoIndex
 
 Apache::AxKit
 
-Apache::BBS
-
 Apache::Backhand
 
 Apache::BlockAgent
 
-Apache::Byterun
-
 Apache::CVS
-
-Apache::CallHandler
 
 Apache::Checksum
 
-Apache::Clickable
+Apache::ChildExit
 
-Apache::CmdParms
+Apache::Clickable
 
 Apache::Command
 
 Apache::Compress
-
-Apache::ConfigDBI
-
-Apache::ConfigLDAP
-
-Apache::Connection
-
-Apache::Constants
 
 Apache::Cookie
 
@@ -196,35 +183,31 @@ Apache::Debug
 
 Apache::DebugInfo
 
-Apache::Dir
-
 Apache::Dispatch
 
 Apache::DnsZone
 
 Apache::DumpHeaders
 
-Apache::DynaRPC
+Apache::Dynagzip
 
 Apache::Embperl
 
 Apache::EmbperlChain
 
-Apache::ExtUtils
-
-Apache::FTP
+Apache::FakeCookie
 
 Apache::FakeRequest
-
-Apache::File
 
 Apache::Filter
 
 Apache::Forward
 
-Apache::GTopLimit
+Apache::ForwardedFor
 
 Apache::Gateway
+
+Apache::GeoIP
 
 Apache::GzipChain
 
@@ -232,15 +215,17 @@ Apache::HTMLView
 
 Apache::Handler
 
-Apache::Icon
+Apache::Htaccess
 
-Apache::Include
+Apache::Icon
 
 Apache::Layer
 
 Apache::Leak
 
-Apache::Log
+Apache::Lint
+
+Apache::Log::Spread
 
 Apache::LogFile
 
@@ -266,8 +251,6 @@ Apache::Mmap
 
 Apache::Module
 
-Apache::ModuleConfig
-
 Apache::ModuleDoc
 
 Apache::Motd
@@ -290,11 +273,7 @@ Apache::PATCH
 
 Apache::PHLogin
 
-Apache::PUT
-
 Apache::PageKit
-
-Apache::ParseControl
 
 Apache::ParseLog
 
@@ -302,15 +281,9 @@ Apache::PassFile
 
 Apache::Peek
 
-Apache::PerlRun
-
-Apache::PerlSections
-
 Apache::PrettyPerl
 
 Apache::PrettyText
-
-Apache::ProxyCache
 
 Apache::ProxyPass
 
@@ -322,27 +295,13 @@ Apache::RedirectDBI
 
 Apache::RefererBlock
 
-Apache::Registry
-
-Apache::RegistryLoader
-
 Apache::Reload
 
 Apache::Request
 
 Apache::RequestNotes
 
-Apache::Resource
-
 Apache::Roaming
-
-Apache::RobotLimit
-
-Apache::RobotRules
-
-Apache::RoleAuthz
-
-Apache::SIG
 
 Apache::SSI
 
@@ -356,11 +315,11 @@ Apache::SawAmpersand
 
 Apache::Scoreboard
 
-Apache::Server
-
 Apache::Servlet
 
 Apache::Session
+
+Apache::SessionManager
 
 Apache::SharedMem
 
@@ -368,25 +327,15 @@ Apache::ShowRequest
 
 Apache::SimpleReplace
 
-Apache::SizeLimit
-
 Apache::SmallProf
 
 Apache::SpeedLimit
 
 Apache::Stage
 
-Apache::StatINC
-
-Apache::State
-
-Apache::Status
-
 Apache::Storage
 
 Apache::StripSession
-
-Apache::SubProcess
 
 Apache::Sybase::CTlib
 
@@ -395,10 +344,6 @@ Apache::Sybase::DBlib
 Apache::Symbol
 
 Apache::Symdump
-
-Apache::Table
-
-Apache::TarGzip
 
 Apache::TempFile
 
@@ -416,8 +361,6 @@ Apache::Traffic
 
 Apache::TransLDAP
 
-Apache::URI
-
 Apache::Upload
 
 Apache::UploadMeter
@@ -426,19 +369,11 @@ Apache::UploadSvr
 
 Apache::Usertrack
 
-Apache::Util
-
 Apache::VMonitor
-
-Apache::VhostSandwich
 
 Apache::WDB
 
-Apache::WatchDog
-
 Apache::Watchdog::RunAway
-
-Apache::WebSQL
 
 Apache::ePerl
 
@@ -446,11 +381,11 @@ Apache::httpd_conf
 
 Apache::iNcom
 
-Apache::src
-
-Apache::test
+Apache::iTunes
 
 App::Config
+
+App::Info
 
 App::Manager
 
@@ -458,17 +393,11 @@ AppConfig
 
 AppConfig::Std
 
-AppleII::DOS33
-
 AppleII::Disk
-
-AppleII::Pascal
 
 AppleII::ProDOS
 
 Archie
-
-Archive::Ar
 
 Archive::Parity
 
@@ -480,23 +409,15 @@ Argv
 
 Array::Compare
 
-Array::Heap
-
 Array::IntSpan
 
 Array::PrintCols
 
 Array::Reform
 
-Array::Substr
-
-Array::Vec
-
-Array::Virtual
-
-AsciiDB::Parse
-
 AsciiDB::TagFile
+
+Astro::Constants
 
 Astro::Coord
 
@@ -510,19 +431,13 @@ Astro::MoonPhase
 
 Astro::SLA
 
-Astro::SkyCat
-
 Astro::SkyCoords
-
-Astro::SunTime
 
 Astro::Sunrise
 
 Astro::Time
 
 Async::Group
-
-Async::Process
 
 AtExit
 
@@ -535,6 +450,8 @@ Attribute::Handlers
 Attribute::Memoize
 
 Attribute::Overload
+
+Attribute::Property
 
 Attribute::Signature
 
@@ -555,8 +472,6 @@ Audio::OSS
 Audio::Play::MPG123
 
 Audio::SoundFile
-
-Audio::Sox
 
 AudioCD
 
@@ -590,15 +505,15 @@ Authen::Ticket
 
 Authorizenet
 
-AutoLoader
-
-AutoSplit
-
 B
+
+B::Deobfuscate
 
 B::Fathom
 
 B::Graph
+
+B::Keywords
 
 B::LexInfo
 
@@ -608,17 +523,11 @@ B::TerseSize
 
 BBDB
 
-BSD::HostIdent
-
 BSD::Ipfwgen
 
 BSD::Resource
 
 BTRIEVE::SAVE
-
-BabelObjects
-
-BarCode::UPC
 
 Barcode::Code128
 
@@ -626,15 +535,17 @@ Be::Attribute
 
 Be::Query
 
-Benchmark
-
 Benchmark::Timer
 
 BerkeleyDB
 
-Bio
+BerkeleyDB::Lite
+
+Biblio::Thesaurus
 
 Bio::Genex
+
+Bio::MAGE
 
 Bit::Vector
 
@@ -660,25 +571,39 @@ BnP
 
 Boulder
 
-Bundle
+Bundle::BDFOY
 
 Bundle::Bugzilla
 
+Bundle::KohaSupport
+
 Bundle::Perl6
 
-Business::Cashcow
+Bundle::SSH
+
+Bundle::Test
 
 Business::CreditCard
 
+Business::FedEx::DirectConnect
+
 Business::ISBN
+
+Business::ISMN
 
 Business::ISSN
 
+Business::NoChex
+
 Business::OnlinePayment
+
+Business::OnlinePayment::WorldPay::Junior
 
 Business::UPC
 
 Business::US_Amort
+
+Business::WorldPay::Junior
 
 C::DynaLib
 
@@ -692,11 +617,11 @@ CDB_File::BiIndex
 
 CDB_File::BiIndex::Generator
 
-CDB_File::Generator
-
 CDDB
 
 CGI::Application
+
+CGI::Application::PhotoGallery
 
 CGI::ArgChecker
 
@@ -710,13 +635,17 @@ CGI::CList
 
 CGI::Cache
 
-CGI::Carp
-
 CGI::Debug
 
 CGI::Deurl
 
+CGI::Echo
+
 CGI::Enurl
+
+CGI::Explorer
+
+CGI::FormBuilder
 
 CGI::FormMagick
 
@@ -724,9 +653,9 @@ CGI::Formalware
 
 CGI::Imagemap
 
-CGI::LogCarp
+CGI::Lite
 
-CGI::ManageSession
+CGI::LogCarp
 
 CGI::MiniSvr
 
@@ -736,9 +665,9 @@ CGI::MultiValuedHash
 
 CGI::MxScreen
 
-CGI::MxWidget
-
 CGI::Out
+
+CGI::Panel
 
 CGI::PathInfo
 
@@ -790,8 +719,6 @@ CORBA::IDLtree
 
 CORBA::IOP::IOR
 
-CORE
-
 CPAN
 
 CSS::SAC
@@ -802,19 +729,15 @@ Cache::Mmap
 
 Calendar::CSA
 
-Calendar::Hebrew
-
-Calendar::RCM
-
 Callback
-
-Carp
 
 Carp::Assert
 
 Carp::CheckArgs
 
 Carp::Datum
+
+Cartography::Projection::GCTP
 
 Catalog
 
@@ -827,8 +750,6 @@ Chart::Base
 Chart::GRACE
 
 Chart::Gdchart
-
-Chart::GnuPlot
 
 Chart::Graph
 
@@ -846,9 +767,11 @@ Chatbot::Eliza
 
 Chemistry::Elements
 
-Chemistry::Isotopes
+Chipcard::CTAPI
 
 Cisco::Conf
+
+Cisco::IPPhone
 
 Class::Accessor
 
@@ -862,11 +785,17 @@ Class::Contract
 
 Class::DBI
 
+Class::DBI::Oracle
+
 Class::DBI::mysql
 
 Class::Date
 
+Class::Decorator
+
 Class::Delegate
+
+Class::EHierarchy
 
 Class::Eroot
 
@@ -904,6 +833,8 @@ Class::ParamParser
 
 Class::ParmList
 
+Class::Prevayler
+
 Class::Prototyped
 
 Class::PseudoHash
@@ -926,11 +857,9 @@ Class::Tree
 
 Class::WhiteHole
 
-ClearCase
+Class::XPath
 
 Clips
-
-Clone
 
 Cmenu
 
@@ -946,11 +875,13 @@ Compress::LZO
 
 Compress::LZV1
 
+Compress::PPMd
+
 Compress::Zlib
 
 Concurrent
 
-Config
+Config::Abstract
 
 Config::FreeForm
 
@@ -958,7 +889,9 @@ Config::Ini
 
 Config::IniFiles
 
-ConfigReader
+Config::Properties
+
+ConfigReader::Simple
 
 Conjury::C
 
@@ -983,6 +916,8 @@ Convert::Base
 Convert::Base32
 
 Convert::BinHex
+
+Convert::CharMap
 
 Convert::DUDE
 
@@ -1010,6 +945,8 @@ Convert::UU
 
 Convert::UUlib
 
+Convert::yEnc
+
 Coro
 
 Coy
@@ -1021,6 +958,8 @@ Crypt::Blowfish_PP
 Crypt::CBC
 
 Crypt::CBCeasy
+
+Crypt::Caesar
 
 Crypt::CipherSaber
 
@@ -1054,13 +993,7 @@ Crypt::OpenSSL::RSA
 
 Crypt::OpenSSL::Random
 
-Crypt::PGP
-
 Crypt::PGP5
-
-Crypt::PGP6
-
-Crypt::PGPSimple
 
 Crypt::PRSG
 
@@ -1082,8 +1015,6 @@ Crypt::Rijndael
 
 Crypt::Rijndael_PP
 
-Crypt::Rot13
-
 Crypt::SKey
 
 Crypt::Schnorr::AuthSign
@@ -1104,17 +1035,19 @@ Crypt::UnixCrypt
 
 Curses
 
+Curses::Application
+
 Curses::Forms
 
 Curses::Widgets
-
-Cwd
 
 Cz::Cstocs
 
 Cz::Sort
 
 Cz::Speak
+
+DB2::db
 
 DBD::ADO
 
@@ -1134,11 +1067,11 @@ DBD::Excel
 
 DBD::FreeTDS
 
+DBD::Google
+
 DBD::Illustra
 
 DBD::Informix
-
-DBD::Informix4
 
 DBD::Ingres
 
@@ -1149,6 +1082,8 @@ DBD::Multiplex
 DBD::ODBC
 
 DBD::Oracle
+
+DBD::PgPP
 
 DBD::PrimeBase
 
@@ -1161,8 +1096,6 @@ DBD::RDB
 DBD::Recall
 
 DBD::SQLrelay
-
-DBD::SearchServer
 
 DBD::Solid
 
@@ -1196,6 +1129,8 @@ DBIx::Browse
 
 DBIx::CGITables
 
+DBIx::Chart
+
 DBIx::Copy
 
 DBIx::DBSchema
@@ -1204,9 +1139,19 @@ DBIx::FetchLoop
 
 DBIx::FullTextSearch
 
-DBIx::HTMLView
+DBIx::HTML::ClientDB
+
+DBIx::HTML::LinkedMenus
+
+DBIx::HTML::PopupRadio
+
+DBIx::Hash2Table
+
+DBIx::Informix::Perform
 
 DBIx::Lookup::Field
+
+DBIx::MSSQLReporter
 
 DBIx::OracleSequence
 
@@ -1218,9 +1163,13 @@ DBIx::SchemaView
 
 DBIx::Sequence
 
+DBIx::Simple
+
 DBIx::SystemCatalog
 
 DBIx::Table
+
+DBIx::Table2Hash
 
 DBIx::TableAdapter
 
@@ -1230,19 +1179,17 @@ DBIx::Tree
 
 DBIx::XHTML_Table
 
+DBIx::XML::DataLoader
+
 DBIx::XMLMEssage
 
 DBIx::XML_RDB
-
-DBIx::dbMan
 
 DBIx::glueHTML
 
 DBM::DBass
 
 DBZ_File
-
-DB_File
 
 DB_File::DB_Database
 
@@ -1270,19 +1217,19 @@ DFA::Command
 
 DFA::Kleene
 
-DFA::Simple
+DNS::Config
+
+DNS::Zone
 
 DNS::ZoneParse
-
-DTREE
 
 DWH_File
 
 Data::BinStruct
 
-Data::Buffer
+Data::Binder
 
-Data::Check
+Data::Buffer
 
 Data::Compare
 
@@ -1291,6 +1238,8 @@ Data::DRef
 Data::Denter
 
 Data::Dumper
+
+Data::Favorites
 
 Data::Flow
 
@@ -1324,15 +1273,7 @@ Data::Walker
 
 Datascope
 
-Date::Bahai
-
-Date::CTime
-
 Date::Calc
-
-Date::Chinese
-
-Date::Convert
 
 Date::Convert::French_Rev
 
@@ -1340,13 +1281,7 @@ Date::DayOfWeek
 
 Date::Discordian
 
-Date::Doomsday
-
 Date::Easter
-
-Date::Egyptian
-
-Date::Ethiopic
 
 Date::Format
 
@@ -1354,15 +1289,9 @@ Date::Gregorian
 
 Date::Handler
 
-Date::Hindu
-
 Date::ICal
 
 Date::ISO
-
-Date::Interval
-
-Date::Japanese
 
 Date::Japanese::Era
 
@@ -1372,19 +1301,15 @@ Date::Manip
 
 Date::Parse
 
-Date::Passover
-
-Date::Persian
-
 Date::Roman
 
 Date::Simple
 
-Date::SundayLetter
-
-Date::Time
-
 Date::Tolkien::Shire
+
+DateTime
+
+DateTime::Event::Easter
 
 Db::Ctree
 
@@ -1393,8 +1318,6 @@ Db::DFC
 Db::Documentum
 
 Db::Mediasurface
-
-Db::dmObject
 
 DbFramework::Attribute
 
@@ -1414,13 +1337,15 @@ DbFramework::Table
 
 DbFramework::Util
 
+Debug::FaultAutoBT
+
+Debug::Trace
+
 Decision::ACL
 
 Decision::Markov
 
 Des
-
-Devel::API
 
 Devel::CallerItem
 
@@ -1440,7 +1365,13 @@ Devel::DebugInit
 
 Devel::DumpStack
 
+Devel::FindGlobals
+
+Devel::Hints
+
 Devel::Leak
+
+Devel::LeakTrace
 
 Devel::Messenger
 
@@ -1450,11 +1381,11 @@ Devel::PPPort
 
 Devel::Peek
 
-Devel::Poke
-
 Devel::RegExp
 
 Devel::SearchINC
+
+Devel::Size
 
 Devel::SmallProf
 
@@ -1472,8 +1403,6 @@ Device::ISDN::OCLM
 
 Device::ParallelPort
 
-Device::SVGA
-
 Device::SerialPort
 
 Dialog
@@ -1490,15 +1419,9 @@ Digest::MD5
 
 Digest::Perl::MD5
 
-Digest::SHA1
-
 Digest::UserSID
 
 Dir::Purge
-
-DirHandle
-
-DynaLoader
 
 ERG
 
@@ -1514,17 +1437,19 @@ Embedix::DB
 
 Embedix::ECD
 
+Encode::HanConvert
+
+Encode::HanDetect
+
+Encode::HanExtra
+
+Encode::compat
+
 End
-
-English
-
-Env
 
 Env::Modulecmd
 
 Env::Path
-
-Errno
 
 Error
 
@@ -1548,23 +1473,21 @@ Exception::Cxx
 
 Expect
 
-Exporter
-
 Exporter::Import
 
 Exporter::Options
 
 Exporter::PkgAlias
 
-ExtUtils::DynaGlue
+Exporter::Tidy
 
-ExtUtils::Embed
+ExtUtils::AutoInstall
+
+ExtUtils::DynaGlue
 
 ExtUtils::F77
 
-ExtUtils::MakeMaker
-
-ExtUtils::Manifest
+ExtUtils::ParseXS
 
 ExtUtils::configPL
 
@@ -1574,14 +1497,6 @@ FCGI
 
 FCGI::ProcManager
 
-FFI
-
-FFI::Library
-
-FFI::Win32::COM
-
-FFI::Win32::Typelib
-
 FUSE::Client
 
 FUSE::Server
@@ -1590,21 +1505,13 @@ Fame
 
 FameHLI
 
-Fcntl
-
-FestVox
-
 Festival::Client
 
 Festival::Client::Async
 
-File::Attrib
-
 File::BSDGlob
 
 File::Backup
-
-File::Basename
 
 File::BasicFlock
 
@@ -1612,17 +1519,15 @@ File::Cache
 
 File::CacheDir
 
-File::CheckTree
-
-File::Compare
-
 File::Copy
 
 File::CounterFile
 
 File::Data
 
-File::Find
+File::Find::Rule
+
+File::Find::Rule::XPath
 
 File::Flock
 
@@ -1640,8 +1545,6 @@ File::MultiTail
 
 File::NFSLock
 
-File::Path
-
 File::Remote
 
 File::Repl
@@ -1652,7 +1555,7 @@ File::Searcher
 
 File::Searcher::Interactive
 
-File::Signature
+File::Searcher::Similars
 
 File::Slurp
 
@@ -1676,14 +1579,6 @@ File::chmod
 
 File::lockf
 
-File::stat
-
-FileCache
-
-FileHandle
-
-Filesys::AFS
-
 Filesys::Df
 
 Filesys::DiskFree
@@ -1693,6 +1588,8 @@ Filesys::DiskSpace
 Filesys::Ext2
 
 Filesys::SamFS
+
+Filesys::SmbClient
 
 Filesys::SmbClientParser
 
@@ -1704,6 +1601,8 @@ Filesys::mntent
 
 Filesys::statfs
 
+Filter::NumberLines
+
 Filter::Simple
 
 Filter::Trigraph
@@ -1711,8 +1610,6 @@ Filter::Trigraph
 Filter::Util::Call
 
 Filter::Util::Exec
-
-Filter::constant
 
 Filter::cpp
 
@@ -1724,6 +1621,10 @@ Filter::sh
 
 Filter::tee
 
+Finance::Bank::Commonwealth
+
+Finance::Bank::CreateCard
+
 Finance::NikkeiQuote
 
 Finance::Quote
@@ -1733,8 +1634,6 @@ Finance::QuoteHist
 Finance::Streamer
 
 FindBin
-
-Flash::SWF
 
 Font::AFM
 
@@ -1746,19 +1645,7 @@ Font::TTF
 
 Fortran::NameList
 
-FrameMaker
-
-FrameMaker::Control
-
-FrameMaker::FDK
-
-FrameMaker::MIF
-
-FreeBSD::SysCalls
-
 FreezeThaw
-
-Fresco
 
 Frontier::RPC
 
@@ -1768,11 +1655,13 @@ GD
 
 GD::Barcode
 
+GD::Gauge
+
 GD::Graph
 
-GD::Text
+GD::Graph3d
 
-GDBM_File
+GD::Text
 
 GDS2
 
@@ -1790,19 +1679,19 @@ GSS
 
 GTop
 
-GUI::Guido
-
 Games::AIBots
 
 Games::Alak
 
 Games::Cards
 
+Games::Crosswords
+
 Games::Dice
 
 Games::Dissociate
 
-Games::Hex
+Games::Object
 
 Games::WordFind
 
@@ -1812,13 +1701,25 @@ Gedcom
 
 Gemstone
 
+Geo::Coordinates::Convert
+
+Geo::Coordinates::UTM
+
+Geo::CountryFlags
+
+Geo::Distance
+
+Geo::GPS::Data
+
 Geo::IP
 
 Geo::METAR
 
-Geo::Storm_Tracker
+Geo::ShapeFile
 
 Geo::WeatherNOAA
+
+Geography::Countries::LatLong
 
 Geography::States
 
@@ -1838,15 +1739,11 @@ Getopt::Gnu
 
 Getopt::Help
 
-Getopt::Long
-
 Getopt::Mixed
 
 Getopt::Regex
 
 Getopt::Simple
-
-Getopt::Std
 
 Getopt::Tabular
 
@@ -1878,11 +1775,11 @@ Graph::Writer::VCG
 
 Graph::Writer::XML
 
-Graph::Writer::daVinci
-
 GraphViz
 
 Graphics::ColorNames
+
+Graphics::ColorPicker
 
 Graphics::Libplot
 
@@ -1890,23 +1787,23 @@ Graphics::MNG
 
 Graphics::Plotter
 
-Graphics::Simple
-
-Graphics::Turtle
-
 Gtk
 
 Gtk::Dialog
 
 Guile
 
-HP200LX::DB
-
-HP200LX::DBgui
-
 HPUX::Ioscan
 
+HPUX::LVM
+
+HPUX::SDUX
+
 HTML::ActiveLink
+
+HTML::BarChart
+
+HTML::BarGraph
 
 HTML::Base
 
@@ -1946,6 +1843,8 @@ HTML::FormTemplate
 
 HTML::Formatter
 
+HTML::FromANSI
+
 HTML::FromText
 
 HTML::GenToc
@@ -1954,7 +1853,11 @@ HTML::HeadParser
 
 HTML::Index
 
+HTML::Info
+
 HTML::LinkExtor
+
+HTML::LinkExtractor
 
 HTML::Lint
 
@@ -1966,15 +1869,13 @@ HTML::Mason
 
 HTML::ParseBrowser
 
-HTML::ParseForm
-
 HTML::Parser
 
 HTML::Processor
 
-HTML::QuickCheck
-
 HTML::Simple
+
+HTML::SimpleLinkExtor
 
 HTML::SimpleParse
 
@@ -1989,6 +1890,8 @@ HTML::Table
 HTML::TableExtract
 
 HTML::TableLayout
+
+HTML::Tabulate
 
 HTML::Tagset
 
@@ -2006,11 +1909,17 @@ HTML::Widgets::Menu
 
 HTML::Widgets::Search
 
-HTTP::Browscap
-
 HTTP::BrowserDetect
 
 HTTP::Cookies
+
+HTTP::Cookies::Mozilla
+
+HTTP::Cookies::Omniweb
+
+HTTP::Cookies::Safari
+
+HTTP::Cookies::iCab
 
 HTTP::DAV
 
@@ -2026,6 +1935,8 @@ HTTP::Message
 
 HTTP::Negotiate
 
+HTTP::Proxy
+
 HTTP::QuickBase
 
 HTTP::Request
@@ -2036,21 +1947,17 @@ HTTP::Request::Form
 
 HTTP::Response
 
+HTTP::SimpleLinkChecker
+
 HTTP::Size
 
 HTTP::Status
-
-HTTP::Test
 
 HTTP::WebTest
 
 HTTP::Webdav
 
-HTTPD::Access
-
 HTTPD::Authen
-
-HTTPD::Config
 
 HTTPD::GroupAdmin
 
@@ -2059,6 +1966,8 @@ HTTPD::Log::Filter
 HTTPD::UserAdmin
 
 Hardware::Simulator
+
+Hash::Case
 
 Hash::NoVivify
 
@@ -2092,15 +2001,11 @@ Hook::Scope
 
 HtDig
 
-HyperWave::CSP
-
 I18N::Charset
-
-I18N::Collate
 
 I18N::LangTags
 
-I18N::WideMulti
+IBM::LoadLeveler
 
 IMAP::Admin
 
@@ -2108,33 +2013,19 @@ IO::AtomicFile
 
 IO::Default
 
-IO::Dir
-
-IO::File
-
 IO::Filter
-
-IO::Handle
 
 IO::Lines
 
 IO::Multiplex
 
-IO::Pipe
-
 IO::React
-
-IO::STREAMS
 
 IO::Scalar
 
 IO::ScalarArray
 
-IO::Seekable
-
 IO::Select
-
-IO::Socket
 
 IO::String
 
@@ -2152,29 +2043,13 @@ IO::WrapTie
 
 IO::Zlib
 
-IOLayer::Base64
-
-IOLayer::MD5
-
-IOLayer::QuotedPrint
-
-IOLayer::StripHTML
-
 IPC::Cache
 
 IPC::ChildSafe
 
-IPC::Globalspace
-
 IPC::LDT
 
 IPC::Locker
-
-IPC::Mmap
-
-IPC::Open2
-
-IPC::Open3
 
 IPC::Run
 
@@ -2186,8 +2061,6 @@ IPC::SharedCache
 
 IPC::Signal
 
-IPC::SysV
-
 IPC::XPA
 
 IPChains
@@ -2196,17 +2069,11 @@ IPChains::PortFW
 
 IPTables::IPv4::IPQueue
 
-IThread::Mutex
-
-IThread::Queue
-
-IThread::Semaphore
-
-Image::Colorimetry
-
 Image::DS9
 
 Image::DeAnim
+
+Image::Dot
 
 Image::GD::Thumbnail
 
@@ -2220,11 +2087,19 @@ Image::Info
 
 Image::Magick
 
+Image::Maps::Plot::FromLatLong
+
+Image::Maps::Plot::FromPostcode
+
 Image::ParseGIF
 
 Image::Size
 
+Image::Thumbnail
+
 Image::Timeline
+
+Image::WMF
 
 Image::WorldMap
 
@@ -2260,12 +2135,6 @@ Ioctl
 
 JUNOS
 
-Jabber::Connection
-
-Jabber::RPC
-
-Jabber::RPC::HTTPgate
-
 Java
 
 Java::JVM::Classfile
@@ -2273,8 +2142,6 @@ Java::JVM::Classfile
 JavaScript
 
 LEGO::RCX
-
-LSF
 
 LWP
 
@@ -2298,21 +2165,23 @@ Language::Basic
 
 Language::DATR::DATR2XML
 
-Language::ML
-
-Language::PGForth
+Language::Ook
 
 Language::Prolog
 
-Language::Style
+Language::Prolog::Sugar
+
+Language::Prolog::Types
+
+Language::Prolog::Yaswi
 
 Language::VBParser
+
+Language::XSB
 
 Lingua::Conjunction
 
 Lingua::DetectCharset
-
-Lingua::EN
 
 Lingua::EN::AddressParse
 
@@ -2332,6 +2201,8 @@ Lingua::EN::NameCase
 
 Lingua::EN::NameParse
 
+Lingua::EN::Namegame
+
 Lingua::EN::Nickname
 
 Lingua::EN::Numbers::Ordinate
@@ -2342,6 +2213,14 @@ Lingua::EN::Squeeze
 
 Lingua::EN::Syllable
 
+Lingua::EO::Supersignoj
+
+Lingua::FR::Numbers
+
+Lingua::FeatureSet
+
+Lingua::GL::Stemmer
+
 Lingua::Ident
 
 Lingua::Ispell
@@ -2350,11 +2229,11 @@ Lingua::JA::Number
 
 Lingua::JA::Sort::JIS
 
-Lingua::KR::Hangul
+Lingua::Lexicon::IDP
 
 Lingua::PT
 
-Lingua::PT::pln
+Lingua::PT::Stemmer
 
 Lingua::Preferred
 
@@ -2366,25 +2245,49 @@ Lingua::Romana::Perligata
 
 Lingua::Stem
 
+Lingua::Stem::Snowball::Da
+
+Lingua::TH::Segmentation
+
+Lingua::ZH::CCDICT
+
+Lingua::ZH::CEDICT
+
 Lingua::ZH::HanConvert
 
-Lingua::Zompist
+Lingua::ZH::HanDetect
+
+Lingua::ZH::Keywords
+
+Lingua::ZH::Numbers
+
+Lingua::ZH::PinyinConvert
+
+Lingua::ZH::Summarize
+
+Lingua::ZH::TaBE
+
+Lingua::ZH::Toke
+
+Lingua::ZH::Wrap
 
 Lingua::Zompist::Barakhinei
 
 Lingua::Zompist::Cadhinor
 
-Lingua::Zompist::Cuezi
-
 Lingua::Zompist::Kebreni
 
 Lingua::Zompist::Verdurian
+
+Linksys::Config
 
 Linux::AIO
 
 Linux::Cpuinfo
 
 Linux::Fuser
+
+Linux::Pid
 
 Linux::Svgalib
 
@@ -2398,11 +2301,13 @@ Locale::Currency
 
 Locale::Date
 
-Locale::Langinfo
-
 Locale::Language
 
 Locale::Maketext
+
+Locale::Maketext::Fuzzy
+
+Locale::Maketext::Lexicon
 
 Locale::Msgcat
 
@@ -2434,9 +2339,15 @@ Log::Detect
 
 Log::Dispatch
 
+Log::Dispatch::Jabber
+
 Log::Dispatch::TkText
 
 Log::Dispatch::ToTk
+
+Log::Dispatch::Win32EventLog
+
+Log::Log4perl
 
 Log::Topics
 
@@ -2444,15 +2355,13 @@ Log::TraceMessages
 
 Logfile
 
-LotusNotes
-
 MARC
+
+MARC::Record
 
 MARC::XML
 
 MIDI
-
-MIDI::Realtime
 
 MIME::Base64
 
@@ -2472,8 +2381,6 @@ MIME::Lite::HTML
 
 MIME::Parser
 
-MIME::ParserBase
-
 MIME::QuotedPrint
 
 MIME::Types
@@ -2484,17 +2391,27 @@ MLDBM
 
 MLDBM::Sync
 
+MLDBM::TinyDB
+
+MMDS
+
 MOP
 
 MP3::Daemon
+
+MP3::ID3Lib
+
+MP3::ID3v1Tag
 
 MP3::Info
 
 MP3::M3U
 
-MP3::Tag
+MP3::M3U::Parser
 
-MPEG::ID3v1Tag
+MP3::Mplib
+
+MP3::Tag
 
 MPEG::ID3v2Tag
 
@@ -2518,21 +2435,19 @@ Mac::AppleEvents
 
 Mac::AppleEvents::Simple
 
-Mac::Apps::Anarchie
+Mac::AppleScript::Glue
 
 Mac::Apps::Launch
 
-Mac::Apps::MacPGP
-
-Mac::Apps::PBar
-
 Mac::AssistantFrames
 
-Mac::Comm::OT_PPP
+Mac::Carbon
 
 Mac::Components
 
 Mac::DtfSQL
+
+Mac::Errors
 
 Mac::FileSpec::Unixish
 
@@ -2548,17 +2463,27 @@ Mac::Memory
 
 Mac::MoreFiles
 
+Mac::Notification
+
 Mac::OSA
 
 Mac::OSA::Simple
 
 Mac::Processes
 
+Mac::PropertyList
+
 Mac::Resources
 
 Mac::Serial
 
+Mac::Sound
+
+Mac::Speech
+
 Mac::Types
+
+Mac::iTunes
 
 Mail::Address
 
@@ -2567,6 +2492,8 @@ Mail::Alias
 Mail::Audit
 
 Mail::Box
+
+Mail::Box::Parser::C
 
 Mail::Cap
 
@@ -2581,6 +2508,8 @@ Mail::Field::Received
 Mail::Folder
 
 Mail::Freshmeat
+
+Mail::GnuPG
 
 Mail::Header
 
@@ -2598,9 +2527,9 @@ Mail::MboxParser
 
 Mail::POP3Client
 
-Mail::PerlTix
-
 Mail::Procmail
+
+Mail::Procmailrc
 
 Mail::QmailRemote
 
@@ -2610,13 +2539,17 @@ Mail::Sender
 
 Mail::Sendmail
 
-Mail::Sieve
+Mail::Sort
 
 Mail::SpamAssassin
 
-Mail::UCEResponder
+Mail::Transport::Dbx
 
 Mail::Util
+
+Mail::Vacation
+
+Mail::Vacation::LDAP
 
 Mail::Verify
 
@@ -2624,17 +2557,13 @@ Mail::VersionTracker
 
 Mail::Vmailmgr
 
-MailBot
-
 Make
 
-Marpa
+MasonX::ApacheHandler::WithCallbacks
 
-Marshal::Dispatch
+MasonX::Resolver::CVS
 
-Marshal::Eval
-
-Marshal::Packed
+MasonX::Resolver::PAR
 
 Math::Amoeba
 
@@ -2645,10 +2574,6 @@ Math::BaseCalc
 Math::Bezier
 
 Math::Bezier::Convert
-
-Math::BigFloat
-
-Math::BigInt
 
 Math::BigInt::BitVect
 
@@ -2664,17 +2589,23 @@ Math::BooleanEval
 
 Math::Brent
 
+Math::Business::BlackScholes
+
 Math::Business::EMA
 
 Math::CDF
+
+Math::Calc::Euro
 
 Math::Calc::Units
 
 Math::Cephes
 
-Math::Complex
-
 Math::Derivative
+
+Math::ErrorPropagation
+
+Math::Evol
 
 Math::Expr
 
@@ -2684,31 +2615,35 @@ Math::Fleximal
 
 Math::Fortran
 
-Math::Fourier
+Math::Fractal::DLA
 
 Math::Fraction
 
 Math::Geometry
 
-Math::Integral
+Math::Geometry::GPC
+
+Math::Geometry::Planar
 
 Math::Interpolate
 
 Math::Libm
 
-Math::LinearProg
-
 Math::Logic
+
+Math::Logic::Predicate
+
+Math::MagicSquare::Generator
 
 Math::Matrix
 
 Math::MatrixBool
 
-Math::MatrixCplx
-
 Math::MatrixReal
 
 Math::MatrixReal::Ext1
+
+Math::Nocarry
 
 Math::Pari
 
@@ -2716,11 +2651,11 @@ Math::Polynomial
 
 Math::Polynomial::Solve
 
-Math::Prime
-
 Math::Project
 
-Math::QuadTree
+Math::Project3D
+
+Math::Project3D::Plot
 
 Math::RPN
 
@@ -2728,7 +2663,7 @@ Math::Random
 
 Math::Random::MT
 
-Math::RandomPrime
+Math::Random::TT800
 
 Math::Round
 
@@ -2740,19 +2675,15 @@ Math::Spline
 
 Math::Trig
 
-Math::TrulyRandom
-
 Math::VecStat
 
 Math::VectorReal
 
+Math::XOR
+
 Math::ematica
 
-Memoize
-
 Memoize::ExpireLRU
-
-Messaging::TIBCO
 
 Metadata::Base
 
@@ -2764,9 +2695,17 @@ Modem::VBox
 
 Modem::Vgetty
 
+Module::Build
+
+Module::Install
+
 Module::InstalledVersion
 
+Module::MakeDist
+
 Module::Reload
+
+Module::ScanDeps
 
 Module::Use
 
@@ -2776,21 +2715,13 @@ Mon::SNMP
 
 Msql
 
-Music::GUIDO
-
 MySQL::TableInfo
 
 Mysql
 
-NDBM_File
-
 NEXT
 
 NNML::Server
-
-NNTP::Server
-
-NT
 
 Net::ACAP
 
@@ -2798,15 +2729,13 @@ Net::AIM
 
 Net::AOLIM
 
-Net::Bind
+Net::BGP
 
-Net::CDDB
+Net::Bind
 
 Net::CDDBScan
 
 Net::CIDR
-
-Net::Cmd
 
 Net::DHCP::Watch
 
@@ -2818,19 +2747,15 @@ Net::DNS
 
 Net::DNS::SEC
 
-Net::DNS::Sec
-
-Net::DNSServer
-
 Net::Daemon
 
 Net::Daemon::SSL
 
-Net::Dnet
-
 Net::Domain
 
-Net::DummyInetd
+Net::EMI::Client
+
+Net::EMI::Common
 
 Net::FTP
 
@@ -2858,8 +2783,6 @@ Net::ICB
 
 Net::ICQ
 
-Net::ICQ2000
-
 Net::ICQV5
 
 Net::ICQV5CD
@@ -2869,12 +2792,6 @@ Net::ICal
 Net::IMAP
 
 Net::IMAP::Simple
-
-Net::IMIP
-
-Net::IRC
-
-Net::ITIP
 
 Net::Ident
 
@@ -2890,7 +2807,7 @@ Net::LDAPapi
 
 Net::LMTP
 
-Net::MsgLink
+Net::LPR
 
 Net::NIS
 
@@ -2918,8 +2835,6 @@ Net::Pcap
 
 Net::Peep
 
-Net::Ping
-
 Net::Ping::External
 
 Net::Printer
@@ -2929,8 +2844,6 @@ Net::QMQP
 Net::SCP
 
 Net::SFTP
-
-Net::SMPP
 
 Net::SMS
 
@@ -2943,10 +2856,6 @@ Net::SMTP
 Net::SNMP
 
 Net::SNMP::Interfaces
-
-Net::SNPP
-
-Net::SOCKS
 
 Net::SSH
 
@@ -2962,10 +2871,6 @@ Net::Syslog
 
 Net::TCP
 
-Net::TFTP
-
-Net::TN3270
-
 Net::Telnet
 
 Net::Telnet::Cisco
@@ -2978,9 +2883,11 @@ Net::Traceroute6
 
 Net::UDP
 
-Net::VNC
-
 Net::Whois
+
+Net::Whois::IP
+
+Net::Whois::RIPE
 
 Net::XWhois
 
@@ -3014,8 +2921,6 @@ NetPacket::TCP
 
 NetPacket::UDP
 
-NetServer::Compiler
-
 NetServer::Generic
 
 NetServer::Portal
@@ -3030,10 +2935,6 @@ Netscape::HistoryURL
 
 Netscape::Server
 
-Netware::Bindery
-
-Netware::NDS
-
 Neural
 
 News::Article
@@ -3046,7 +2947,7 @@ News::NNTPClient
 
 News::Newsrc
 
-News::Scan
+News::Search
 
 NexTrieve
 
@@ -3096,8 +2997,6 @@ NexTrieve::Targz
 
 NexTrieve::UTF8
 
-Nexus
-
 No::Dato
 
 No::KontoNr
@@ -3116,13 +3015,13 @@ Number::Phone::US
 
 O
 
-ODBM_File
-
 OLE::PropertySet
 
 OLE::Storage
 
 OLE::Storage_Lite
+
+OODoc
 
 OS2::ExtAttr
 
@@ -3140,13 +3039,11 @@ ObjStore
 
 Object::Info
 
-Object::Prototyped
-
 Object::Realize::Later
 
 Object::Transaction
 
-Opcode
+Ogg::Vorbis::Header
 
 OpenCA
 
@@ -3164,9 +3061,11 @@ OurNet
 
 OurNet::BBSApp::Sync
 
-OurNet::OSD
+OurNet::FuzzyIndex
 
 P4::Client
+
+PAR
 
 PApp
 
@@ -3175,8 +3074,6 @@ PApp::SQL
 PCL::Simple
 
 PDA::Pilot
-
-PDA::PilotDesktop
 
 PDF
 
@@ -3189,6 +3086,8 @@ PDF::Labels
 PDF::Parse
 
 PDF::PlainLayout
+
+PDF::Report
 
 PDL
 
@@ -3214,7 +3113,15 @@ PGP::Sign
 
 PGPLOT
 
+PHP::Include
+
+PHP::Session
+
 POE::Component::Client::FTP
+
+POE::Component::Client::HTTP
+
+POE::Component::Client::Ping
 
 POE::Component::Client::UserAgent
 
@@ -3228,6 +3135,8 @@ POE::Component::Pcap
 
 POE::Component::RSS
 
+POE::Component::Server::HTTP
+
 POE::Component::SubWrapper
 
 POE::Component::UserBase
@@ -3236,23 +3145,19 @@ POE::Kernel
 
 POE::Session
 
-POSIX
+POE::Session::GladeXML
 
 PPM
 
+PPM::Make
+
 PPresenter
 
-PQI
-
 PV
-
-Palm::ThinkDB
 
 Parallel::ForkManager
 
 Parallel::Pvm
-
-Parse::ABNF
 
 Parse::FixedLength
 
@@ -3260,9 +3165,9 @@ Parse::Lex
 
 Parse::Lexer
 
-Parse::RecDescent
+Parse::PlainConfig
 
-Parse::Syntax
+Parse::RecDescent
 
 Parse::Syslog
 
@@ -3276,8 +3181,6 @@ Parse::Yapp
 
 Parse::ePerl
 
-Pcap
-
 Penguin
 
 Penguin::Easy
@@ -3288,21 +3191,17 @@ Perl
 
 Perl6::Interpolators
 
+Perl6::Parameters
+
 Perl6::Variables
 
 PerlIO
 
-PerlIO::Via::Base64
-
-PerlIO::Via::MD5
-
-PerlIO::Via::QuotedPrint
-
-PerlIO::Via::StripHTML
-
 PerlIO::gzip
 
 PerlMenu
+
+PerlPoint::Package
 
 Perlbug
 
@@ -3324,33 +3223,25 @@ Persistent::mSQL
 
 Pg
 
-PgSQL
+Physics::Particles
+
+Physics::Unit
 
 PixDraw
 
 Pod::Checker
 
-Pod::Diff
-
 Pod::DocBook
-
-Pod::HTML
 
 Pod::HTML2Pod
 
 Pod::Hlp
 
-Pod::Index
-
 Pod::LaTeX
-
-Pod::Latex
 
 Pod::Lyx
 
 Pod::MIF
-
-Pod::Man
 
 Pod::POM
 
@@ -3360,29 +3251,17 @@ Pod::Parser
 
 Pod::Pdf
 
-Pod::Pod
-
-Pod::RTF
-
 Pod::Rtf
-
-Pod::Sdf
 
 Pod::Select
 
-Pod::Simplify
-
-Pod::Texinfo
-
-Pod::Text
+Pod::Simple
 
 Pod::Tree
 
 Pod::Usage
 
 Pod::XML
-
-Poetry::Vogon
 
 Pogo
 
@@ -3396,11 +3275,25 @@ PostScript::Document
 
 PostScript::Elements
 
+PostScript::File
+
 PostScript::Font
 
 PostScript::FontInfo
 
 PostScript::FontMetrics
+
+PostScript::Graph::Bar
+
+PostScript::Graph::Key
+
+PostScript::Graph::Paper
+
+PostScript::Graph::Stock
+
+PostScript::Graph::Style
+
+PostScript::Graph::XY
 
 PostScript::ISOLatin1Encoding
 
@@ -3426,9 +3319,13 @@ Proc::ExitStatus
 
 Proc::Forkfunc
 
+Proc::ParallelLoop
+
 Proc::ProcessTable
 
 Proc::Queue
+
+Proc::Reliable
 
 Proc::SafePipe
 
@@ -3444,11 +3341,7 @@ Proc::times
 
 Protect
 
-Proxy
-
 Proxy::Tk
-
-Psion::Db
 
 Ptty
 
@@ -3476,8 +3369,6 @@ Quantum::Superpositions
 
 Quantum::Usrn
 
-Quiz::Question
-
 Quota
 
 R3
@@ -3493,8 +3384,6 @@ RAS::AS5200
 RAS::HiPerARC
 
 RAS::PortMaster
-
-RDF::Core
 
 RDF::Redland
 
@@ -3518,31 +3407,17 @@ RPM::Headers
 
 RT
 
-RTF::Base
-
-RTF::Document
-
-RTF::Generator
-
-RTF::Group
-
 RTF::Parser
+
+RTF::Reader
 
 RTF::Tokenizer
 
-Rc
-
 Rcs
 
-Real::Encode
-
-Reefknot::Client
-
-Reefknot::Server
+Readonly
 
 Ref
-
-Regexp
 
 Regexp::Common
 
@@ -3560,6 +3435,8 @@ Religion::Package
 
 Remedy::AR
 
+Remedy::ARSTools
+
 RenderMan
 
 Replication::Recall::Client
@@ -3568,11 +3445,7 @@ Replication::Recall::DBServer
 
 Replication::Recall::Server
 
-Resolute::RAPS
-
 Resources
-
-Riscos
 
 Roman
 
@@ -3580,19 +3453,11 @@ Router::LG
 
 SAP::Rfc
 
-SDBM_File
-
-SDDF
-
 SGI::FAM
 
 SGI::FM
 
 SGI::GL
-
-SGI::SysCalls
-
-SGML::Element
 
 SGML::Entity
 
@@ -3616,7 +3481,7 @@ SNMP::NPAdmin
 
 SNMP::Util
 
-SOAP
+SOAP::Clean
 
 SOOP
 
@@ -3630,15 +3495,41 @@ SQL::Snippet
 
 SQL::Statement
 
-SSLeay
-
-SUPER
+SQL::Translator
 
 SVG
 
+SVG::DOM
+
+SVG::Element
+
 SVG::Graph
 
-Safe
+SVG::XML
+
+SWIFT::Factory::ApplicationHeader
+
+SWIFT::Factory::BasicHeader
+
+SWIFT::Factory::Tag::Tag15
+
+SWIFT::Factory::Tag::Tag17
+
+SWIFT::Factory::Tag::Tag17A
+
+SWIFT::Factory::Tag::Tag17T
+
+SWIFT::Factory::Tag::Tag17U
+
+SWIFT::Factory::Tag::Tag20
+
+SWIFT::Factory::Tag::Tag21
+
+SWIFT::Factory::Tag::Tag30
+
+SWIFT::Factory::Tag::Tag30T
+
+SWIFT::Factory::Tag::Tag30V
 
 Safe::Hole
 
@@ -3658,57 +3549,13 @@ Schedule::Match
 
 Search::Binary
 
-Search::Dict
+Search::FreeText
 
 Search::InvertedIndex
-
-SelectSaver
-
-Selectable
-
-SelfLoader
 
 Sendmail::AccessDB
 
 Sendmail::Milter
-
-Server::Echo::MailPipe
-
-Server::Echo::TcpDForking
-
-Server::Echo::TcpDMplx
-
-Server::Echo::TcpISNowait
-
-Server::Echo::TcpISWFork
-
-Server::Echo::TcpISWMplx
-
-Server::Echo::UdpD
-
-Server::Echo::UdpIS
-
-Server::FileQueue::DirQueue
-
-Server::FileQueue::Functions
-
-Server::FileQueue::MboxQueue
-
-Server::FileQueue::Object
-
-Server::Inet::Functions
-
-Server::Inet::Object
-
-Server::Inet::TcpClientObj
-
-Server::Inet::TcpMasterObj
-
-Server::Inet::UdpObj
-
-Server::Mail::Functions
-
-Server::Mail::Object
 
 Server::Server::EventDriven
 
@@ -3717,6 +3564,8 @@ Set::Bag
 Set::CheckList
 
 Set::Crontab
+
+Set::CrossProduct
 
 Set::Infinite
 
@@ -3732,27 +3581,23 @@ Set::Scalar
 
 Set::Window
 
-Shell
-
 Shell::Source
 
 ShellScript::Env
-
-Shockwave::Lingo
 
 Silly::StringMaths
 
 Silly::Werder
 
+SimpleCDB
+
+Simulation::Automate
+
 Slash
 
 Slash::OurNet
 
-Slash::Syndicate
-
 Smirch
-
-Socket
 
 Socket6
 
@@ -3766,23 +3611,17 @@ Solaris::Contents
 
 Solaris::InstallDB
 
-Solaris::Kmem
-
 Solaris::Kstat
-
-Solaris::MIB
 
 Solaris::MapDev
 
-Solaris::NDD
-
 Solaris::Package
+
+Solaris::PerlGcc
 
 Solaris::Procfs
 
 Sort::ArbBiLex
-
-Sort::ByCompatMatrix
 
 Sort::Fields
 
@@ -3794,8 +3633,6 @@ Sparky
 
 Spectrum::CLI
 
-Speech::EST
-
 Speech::Festival
 
 Speech::Festival::Synthesiser
@@ -3804,19 +3641,11 @@ Speech::Recognizer::SPX
 
 Splash::DB
 
-Spool::Queue
-
-Spreadsheet::Excel
-
-Spreadsheet::Lotus
-
 Spreadsheet::ParseExcel
 
 Spreadsheet::WriteExcel
 
 Sprite
-
-Stanza
 
 Stat::lsMode
 
@@ -3834,9 +3663,11 @@ Statistics::MaxEntropy
 
 Statistics::OLS
 
+Statistics::PointEstimation
+
 Statistics::ROC
 
-Storable
+Statistics::TTest
 
 Strict::Prototype
 
@@ -3874,9 +3705,15 @@ Sub::Curry
 
 Sub::Quotelike
 
-Sx
+Sub::Regex
 
-Sybase::Async
+Sun::Solaris::Exacct
+
+Sun::Solaris::Project
+
+Sun::Solaris::Task
+
+Sx
 
 Sybase::BCP
 
@@ -3890,8 +3727,6 @@ Sybase::Sybperl
 
 Sybase::Xfer
 
-Symbol
-
 Symbol::Approx::Sub
 
 Symbol::Table
@@ -3902,15 +3737,11 @@ Sys::AlarmCall
 
 Sys::CPU
 
-Sys::Hostname
-
 Sys::Hostname::Long
 
 Sys::Lastlog
 
 Sys::Sysconf
-
-Sys::Syslog
 
 Sys::Utmp
 
@@ -3925,8 +3756,6 @@ SystemC::Netlist
 SystemC::Parser
 
 SystemC::Vregs
-
-T3D
 
 TFTP
 
@@ -3948,15 +3777,11 @@ Telephony::Phonedev
 
 Template
 
-Term::ANSIColor
+Template::Plugin::StickyQuery
 
 Term::ANSIScreen
 
-Term::Cap
-
-Term::Complete
-
-Term::Control
+Term::EditLine
 
 Term::Gnuplot
 
@@ -3972,53 +3797,69 @@ Term::Query
 
 Term::ReadKey
 
-Term::ReadLine
-
 Term::ReadLine::Gnu
 
 Term::ReadLine::Perl
 
-Term::Scraper
-
 Term::Screen
+
+Term::ScreenColor
 
 Term::Size
 
+Term::Size::Heuristic
+
 Term::TUI
+
+Term::Twiddle
 
 Term::VT102
 
-Test
+Term::Visual
 
-Test::Case
+Tern::Size::Heuristic
 
 Test::Cmd
 
+Test::Data
+
+Test::Env
+
 Test::Exception
 
-Test::Harness
+Test::FIT
+
+Test::File
+
+Test::ISBN
 
 Test::Litmus
 
 Test::Mail
 
+Test::Manifest
+
 Test::More
+
+Test::Pod
+
+Test::Reporter
 
 Test::Simple
 
-Test::Suite
+Test::URI
 
 Test::Unit
 
-Text::Abbrev
+Test::Version
+
+Text::ASCIITable
 
 Text::Balanced
 
 Text::Banner
 
 Text::BarGraph
-
-Text::Bastardize
 
 Text::Bib
 
@@ -4040,6 +3881,8 @@ Text::FastTemplate
 
 Text::FillIn
 
+Text::Flowchart::Script
+
 Text::Format
 
 Text::German
@@ -4050,11 +3893,7 @@ Text::Header
 
 Text::Iconv
 
-Text::Invert
-
 Text::Macros
-
-Text::Merge
 
 Text::MetaText
 
@@ -4062,13 +3901,9 @@ Text::Metaphone
 
 Text::MicroMason
 
-Text::Morse
-
-Text::ParseWords
+Text::Orientation
 
 Text::Parser
-
-Text::Quickwrap
 
 Text::Refer
 
@@ -4078,15 +3913,9 @@ Text::ScriptTemplate
 
 Text::SimpleTemplate
 
-Text::Soundex
-
 Text::Stem
 
 Text::Substitute
-
-Text::Tabs
-
-Text::TeX
 
 Text::Templar
 
@@ -4098,8 +3927,6 @@ Text::Trie
 
 Text::Vpp
 
-Text::Wrap
-
 Text::Wrap::Hyphenate
 
 Text::iPerl
@@ -4108,31 +3935,15 @@ Text::xSV
 
 Thesaurus
 
-Thread
-
 Thread::Group
-
-Thread::IO
-
-Thread::Object
 
 Thread::Pool
 
-Thread::Queue
-
 Thread::RWLock
 
-Thread::Semaphore
-
-Thread::Signal
-
-Thread::Specific
-
-ThreeD
+Tibco::Rv
 
 Tie::AliasHash
-
-Tie::Array
 
 Tie::CPHash
 
@@ -4166,8 +3977,6 @@ Tie::GHash
 
 Tie::Handle
 
-Tie::Hash
-
 Tie::Hash::Regex
 
 Tie::Hash::Stack
@@ -4190,9 +3999,9 @@ Tie::Multidim
 
 Tie::OffsetArray
 
-Tie::Persistent
+Tie::PerfectHash
 
-Tie::Quick
+Tie::Persistent
 
 Tie::RDBM
 
@@ -4200,9 +4009,9 @@ Tie::RangeHash
 
 Tie::RegexpHash
 
-Tie::RndHash
+Tie::RemoteVar
 
-Tie::Scalar
+Tie::RndHash
 
 Tie::Scalar::Timeout
 
@@ -4212,15 +4021,15 @@ Tie::SentientHash
 
 Tie::ShadowHash
 
-Tie::ShiftSplice
-
 Tie::SortHash
 
 Tie::StrictHash
 
-Tie::SubstrHash
-
 Tie::TextDir
+
+Tie::Tk::Listbox
+
+Tie::Toggle
 
 Tie::TransactHash
 
@@ -4234,17 +4043,21 @@ Time::CTime
 
 Time::DaysInMonth
 
+Time::Duration::sv
+
 Time::HiRes
 
-Time::JulianDay
+Time::JulianDateTime
 
-Time::Local
+Time::JulianDay
 
 Time::Object
 
 Time::ParseDate
 
 Time::Period
+
+Time::Piece::MySQL
 
 Time::Seconds
 
@@ -4260,17 +4073,13 @@ Time::Warp
 
 Time::Zone
 
-Time::gmtime
-
-Time::localtime
-
-Tivoli
-
 Tk
 
 Tk::Autoscroll
 
 Tk::Axis
+
+Tk::Calculator::RPN::HP
 
 Tk::CheckBox
 
@@ -4280,19 +4089,27 @@ Tk::Clock
 
 Tk::Cloth
 
+Tk::CollapsableFrame
+
 Tk::Columns
 
 Tk::ComboEntry
 
 Tk::ContextHelp
 
+Tk::Copy::Mac
+
+Tk::CursorControl
+
 Tk::Date
 
 Tk::DateEntry
 
+Tk::DatePick
+
 Tk::Dial
 
-Tk::Enscript
+Tk::ExecuteCommand
 
 Tk::FcyEntry
 
@@ -4308,9 +4125,15 @@ Tk::FontDialog
 
 Tk::Getopt
 
+Tk::Graph
+
+Tk::GraphViz
+
 Tk::HTML
 
 Tk::HistEntry
+
+Tk::IPEntry
 
 Tk::IconCanvas
 
@@ -4318,13 +4141,17 @@ Tk::JComboBox
 
 Tk::JPEG
 
-Tk::LockDisplay
+Tk::LCD
 
-Tk::Login
+Tk::LockDisplay
 
 Tk::MListbox
 
+Tk::MatchEntry
+
 Tk::Menustrip
+
+Tk::MinMaxScale
 
 Tk::More
 
@@ -4348,15 +4175,21 @@ Tk::PathEntry
 
 Tk::Pgplot
 
+Tk::PhotoRotate
+
 Tk::Pod
 
 Tk::ProgressBar
 
-Tk::ProgressMeter
+Tk::ProgressBar::Mac
 
 Tk::RotCanvas
 
+Tk::Splashscreen
+
 Tk::SplitFrame
+
+Tk::Stderr
 
 Tk::TFrame
 
@@ -4370,7 +4203,11 @@ Tk::TableEdit
 
 Tk::TableMatrix
 
+Tk::Task
+
 Tk::TextANSIColor
+
+Tk::Thumbnail
 
 Tk::TiedListbox
 
@@ -4380,13 +4217,15 @@ Tk::TreeGraph
 
 Tk::WaitBox
 
+Tk::Wizard
+
 Tk::Workspace
 
 Tk::XMLViewer
 
-ToolTalk
+Tk::autobind
 
-Tree::Base
+ToolTalk
 
 Tree::DAG_Node
 
@@ -4396,8 +4235,6 @@ Tree::M
 
 Tree::Nary
 
-Tree::Smart
-
 Tree::Ternary
 
 Tree::Ternary_XS
@@ -4406,7 +4243,7 @@ Tree::Trie
 
 UDDI
 
-UNIVERSAL
+UML::Sequence
 
 URI::Attr
 
@@ -4422,6 +4259,10 @@ URI::Sequin
 
 URI::URL
 
+UUID
+
+Unicode::EastAsianWidth
+
 Unicode::Japanese
 
 Unicode::Lite
@@ -4429,8 +4270,6 @@ Unicode::Lite
 Unicode::Map8
 
 Unicode::MapUTF8
-
-Unicode::Normal
 
 Unicode::String
 
@@ -4446,31 +4285,19 @@ Unix::UserAdmin
 
 Usage
 
+User::Identity
+
 User::Utmp
 
 User::grent
 
 User::pwent
 
-User::utent
-
 VCS
-
-VCS::CVS
-
-VCS::PVCS
-
-VCS::RCE
-
-VCS::RCS
 
 VCS::StarTeam
 
-VDBM
-
 VMS::Device
-
-VMS::Filespec
 
 VMS::Fileutils::Root
 
@@ -4479,8 +4306,6 @@ VMS::Fileutils::SafeName
 VMS::ICC
 
 VMS::Lock
-
-VMS::Mail
 
 VMS::Misc
 
@@ -4494,8 +4319,6 @@ VMS::Process
 
 VMS::Queue
 
-VMS::SysCalls
-
 VMS::System
 
 VMS::User
@@ -4504,13 +4327,15 @@ VRML
 
 VRML::Base
 
-VRML::Browser
-
 VRML::Color
 
 VRML::VRML1
 
 VRML::VRML2
+
+Variable::Alias
+
+Verilog::CodeGen
 
 Verilog::Language
 
@@ -4524,10 +4349,6 @@ Video::Capture::V4l
 
 WAIT
 
-WAP::WML
-
-WAP::Wbmp
-
 WDDX
 
 WING
@@ -4536,13 +4357,9 @@ WML::Card
 
 WML::Deck
 
-WOMP
-
 WWW::BBSWatch
 
 WWW::Cache::Google
-
-WWW::Link
 
 WWW::Mail::Hotmail
 
@@ -4574,6 +4391,10 @@ WWW::Search::RpmFind
 
 WWW::Search::Yahoo
 
+WWW::SherlockSearch
+
+WWW::ShopBot
+
 Wais
 
 Watchdog::HTTPService
@@ -4586,7 +4407,13 @@ WebCache::Digest
 
 WebFS::FileCopy
 
+WebService::FreeDB
+
+WebSphere::Payment
+
 Whitespace
+
+Widget::FixedWidthFont::Input
 
 Win32::ADO
 
@@ -4598,13 +4425,15 @@ Win32::AbsPath
 
 Win32::AdminMisc
 
-Win32::COM
-
 Win32::ChangeNotify
 
 Win32::Clipboard
 
 Win32::Console
+
+Win32::Console::ANSI
+
+Win32::Daemon::Simple
 
 Win32::DriveInfo
 
@@ -4632,13 +4461,11 @@ Win32::IPC
 
 Win32::Internet
 
+Win32::MSAgent
+
+Win32::MSI
+
 Win32::Message
-
-Win32::Msiexec
-
-Win32::MultiMedia::Joystick
-
-Win32::MultiMedia::Mci
 
 Win32::Mutex
 
@@ -4656,6 +4483,8 @@ Win32::Pipe
 
 Win32::Process
 
+Win32::Process::Info
+
 Win32::RASE
 
 Win32::Registry
@@ -4670,27 +4499,23 @@ Win32::Shortcut
 
 Win32::Sound
 
+Win32::SoundRec
+
 Win32::SystemInfo
 
 Win32::WinError
 
 Win32API::CommPort
 
-Win32API::Console
-
-Win32API::File
+Win32API::MIDI
 
 Win32API::Registry
 
-Win32API::WinStruct
-
-Win32API::Window
-
-Win95
-
-WinNT
-
 Workflow
+
+Wx
+
+Wx::ActiveX
 
 X11::Auth
 
@@ -4752,8 +4577,6 @@ XML::Doctype
 
 XML::Dumper
 
-XML::EP
-
 XML::Edifact
 
 XML::Element
@@ -4784,6 +4607,8 @@ XML::Handler::Composer
 
 XML::Handler::PrintEvents
 
+XML::Mini
+
 XML::NamespaceSupport
 
 XML::PPD
@@ -4795,6 +4620,8 @@ XML::Parser
 XML::QL
 
 XML::RDB
+
+XML::RSS
 
 XML::RegExp
 
@@ -4813,6 +4640,8 @@ XML::Simple
 XML::Stream
 
 XML::TreeBuilder
+
+XML::Twig
 
 XML::UM
 
@@ -4842,19 +4671,11 @@ Xmms
 
 Xmms::Config
 
-Xmms::Plugin
-
 Xmms::Remote
 
 YAML
 
-constant
-
 dTemplate
-
-diagnostics
-
-enum
 
 ex::caution
 
@@ -4866,27 +4687,28 @@ ex::interface
 
 ex::override
 
-integer
-
-less
-
-lib
-
 namespace
 
-overload
 
-sigtrap
+=head1 CHANGES
 
-strict
+=over 4
 
-subs
+=item 0.02
 
-vars
+Update to current module list
 
-=head1 DESCRIPTION
+Include script to update the list
+
+Skip standard modules
+
+=item 0.01
+
+Initial version
+
+=back
 
 =head1 AUTHOR
 
-Robert Spier
+Robert Spier and Ask Bjoern Hansen
 

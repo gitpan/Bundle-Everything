@@ -1,2 +1,2 @@
 use ExtUtils::MakeMaker;
-WriteMakefile(NAME => Bundle::Everything, VERSION => '0.01');
+WriteMakefile(NAME => Bundle::Everything, VERSION_FROM => 'Everything.pm');
