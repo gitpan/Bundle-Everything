@@ -1,6 +1,6 @@
 package Bundle::Everything;
 
-$VERSION = '0.05'
+$VERSION = '0.06'
 
 1;
 
@@ -14,7 +14,12 @@ Bundle::Everything - CPAN Bundle for all of CPAN
 
 C<perl -MCPAN -e 'install Bundle::Everything'>
 
-This probably won't actually work, but it's cool anyway.
+This probably won't actually install, but it's cool anyway.
+
+=head1 DISCLAIMER
+
+This bundle doesn't actually contain I<everything>, but it does contain
+the over 5500 modules listed in the module list.
 
 =head1 CONTENTS
 AFS
@@ -47,6 +52,8 @@ AI::Pathfinding::AStar
 
 AI::Pathfinding::SMAstar
 
+AIX::LVM
+
 AIX::ODM
 
 AIX::Perfstat
@@ -54,6 +61,8 @@ AIX::Perfstat
 ARS
 
 ASP
+
+Abjad
 
 Ace
 
@@ -66,8 +75,6 @@ Acme::Archive::Mbox
 Acme::Buffy
 
 Acme::Chef
-
-Acme::Clouseau
 
 Acme::Enc
 
@@ -86,6 +93,8 @@ Acme::Morse::Audible
 Acme::PIA::Export
 
 Acme::PM::Barcelona::Meeting
+
+Acme::Phlegethoth
 
 Acme::Playmate
 
@@ -121,13 +130,19 @@ Algorithm::AhoCorasick::SearchMachine
 
 Algorithm::BaumWelch
 
+Algorithm::BellmanFord
+
 Algorithm::BinPack
 
 Algorithm::Cluster
 
+Algorithm::Cluster::Thresh
+
 Algorithm::CurveFit
 
 Algorithm::Diff
+
+Algorithm::DistanceMatrix
 
 Algorithm::GoldenSection
 
@@ -181,15 +196,21 @@ Algorithm::SpiralSearch
 
 Algorithm::TokenBucket
 
+Algorithm::VSM
+
 Algorithm::WordLevelStatistics
 
 Alias
 
 Alien
 
+Alien::LibANN
+
 Alien::QtSmoke
 
 Alien::SeleniumRC
+
+Alien::VideoLAN::LibVLC
 
 Alien::scriptaculous
 
@@ -201,9 +222,19 @@ Alvis::Convert
 
 Alzabo
 
+Any::Renderer::Data::Printer
+
 AnyDBM_File::Importer
 
 AnyData
+
+AnyEvent::Handle::ZeroMQ
+
+AnyEvent::Net::Curl::Queued
+
+AnyEvent::POE_Reference
+
+AnyEvent::STOMP
 
 AnyEvent::XMLRPC
 
@@ -241,6 +272,8 @@ Apache2::Controller
 
 Apache2::ExplorerDestroyer
 
+Apache2::Filter::GoogleAnalytics
+
 Apache2::Filter::HTTPHeadersFixup
 
 Apache2::Filter::Minifier::CSS
@@ -264,6 +297,8 @@ Apache2::Pod
 Apache2::REST
 
 Apache2::RequestRec::Time
+
+Apache2::Response::FileMerge
 
 Apache2::xForwardedFor
 
@@ -477,8 +512,6 @@ Apache::OWA
 
 Apache::OpenIndex
 
-Apache::OutputChain
-
 Apache::PATCH
 
 Apache::PHLogin
@@ -513,15 +546,13 @@ Apache::RequestNotes
 
 Apache::SSI
 
-Apache::SSIChain
-
 Apache::Safe
-
-Apache::Sandwich
 
 Apache::SawAmpersand
 
 Apache::Scoreboard
+
+Apache::SdnFw
 
 Apache::Session
 
@@ -607,21 +638,31 @@ App::Alice
 
 App::Anarch
 
+App::AutoBuild
+
 App::Booklist
 
 App::CCSV
 
 App::ClusterSSH
 
+App::CmdDirs
+
 App::EUMM::Migrate
 
 App::EUMM::Upgrade
 
+App::FileTools::BulkRename
+
 App::Framework
+
+App::GitGot
 
 App::Info
 
 App::MaMGal
+
+App::MediaWiki2Git
 
 App::Modular
 
@@ -633,19 +674,41 @@ App::Open
 
 App::Options
 
+App::PFM::Abstract
+
 App::PPBuild
 
+App::Pastebin::sprunge
+
 App::Pm2Port
+
+App::RecordStream
 
 App::SPG
 
 App::Smbxfer
 
+App::SnerpVortex
+
+App::Spirograph
+
+App::Unix::RPasswd
+
+App::Vimpl
+
+App::Wubot
+
 App::ZofCMS
 
 App::autopod
 
+App::backimap
+
 App::nztop
+
+App::perlhl
+
+App::psst
 
 App::sh2p
 
@@ -691,6 +754,8 @@ Array::AsObject
 
 Array::Compare
 
+Array::DeepUtils
+
 Array::IntSpan
 
 Array::LineReader
@@ -701,11 +766,13 @@ Array::PrintCols
 
 Array::Tour
 
-Artemis
-
 AsciiDB::TagFile
 
+Asm::Preproc
+
 Asm::X86
+
+Asm::Z80::Table
 
 Aspect::Loader
 
@@ -770,6 +837,8 @@ Attribute::Types
 Audio::Analyzer
 
 Audio::Ardour::Control
+
+Audio::Audacious
 
 Audio::CD
 
@@ -837,6 +906,8 @@ Authen::Krb5::KDB
 
 Authen::NIST::RBAC
 
+Authen::NTLM
+
 Authen::OATH
 
 Authen::PAM
@@ -872,8 +943,6 @@ AutoReloader
 AutoRole
 
 Autocache
-
-AxKit::XSP::BasicSession
 
 AxKit::XSP::Sendmail
 
@@ -911,6 +980,8 @@ BS2000::LMS
 
 BSD::Resource
 
+BSD::Socket::Splice
+
 BSD::Sysctl
 
 BTRIEVE::SAVE
@@ -941,6 +1012,8 @@ BerkeleyDB::Locks
 
 BibTeX::Parser
 
+Biblio::Citation::Compare
+
 Biblio::Citation::Parser
 
 Biblio::Document::Parser
@@ -951,9 +1024,9 @@ Biblio::Thesaurus
 
 BigIP::ParseConfig
 
-Bigtop
+BigIP::iControl
 
-Binutils::Objdump
+Bigtop
 
 Bio::ASN1::EntrezGene
 
@@ -979,7 +1052,7 @@ Bio::Genex
 
 Bio::Glite
 
-Bio::InterMine
+Bio::Homology::InterologWalk
 
 Bio::MAGE
 
@@ -991,6 +1064,8 @@ Bio::Mitomaster
 
 Bio::Phylo
 
+Bio::Polloc
+
 Bio::PopMX
 
 Bio::SAGE
@@ -998,6 +1073,8 @@ Bio::SAGE
 Bio::Trace::ABIF
 
 Bio::mGen
+
+BioX::DB::SCOP
 
 Bit::Vector
 
@@ -1017,11 +1094,15 @@ Blatte::Syntax
 
 Blatte::Ws
 
+Blitz
+
 Bloom::Faster
 
 Bloom::Filter
 
 Bloom::Filter::XS
+
+BlueCoat::SGOS
 
 BnP
 
@@ -1029,13 +1110,13 @@ Boost::Graph
 
 Bot::BasicBot::Pluggable::Module::Gitbot
 
-Bot::BasicBot::Pluggable::Module::Message
-
 Bot::BasicBot::Pluggable::Module::PasteBin
 
-Bot::BasicBot::Pluggable::Module::TwitterFriendsStatus
+Bot::BasicBot::Pluggable::Module::XKCD
 
 Bot::Jabbot
+
+Bot::Pastebot
 
 Boulder
 
@@ -1091,6 +1172,8 @@ Business::AllPay::Code
 
 Business::CA::GST
 
+Business::CUSIP::Random
+
 Business::CreditCard
 
 Business::FedEx::DirectConnect
@@ -1127,6 +1210,8 @@ Business::OnlinePayment::Iridium
 
 Business::OnlinePayment::Moneris
 
+Business::OnlinePayment::Ogone
+
 Business::OnlinePayment::SynapseGateway
 
 Business::OnlinePayment::Transfirst
@@ -1145,8 +1230,6 @@ Business::US_Amort
 
 Business::WebMoney
 
-Business::WorldPay::Junior
-
 C::DynaLib
 
 C::Include
@@ -1158,6 +1241,8 @@ C::TCC
 CA::AutoSys
 
 CAD::Drawing
+
+CAD::Firemen
 
 CAM::PDF::Annot
 
@@ -1176,6 +1261,8 @@ CFEngine::CFPerl
 CGI
 
 CGI::Ajax
+
+CGI::Alert
 
 CGI::Apache2::Wrapper
 
@@ -1255,8 +1342,6 @@ CGI::ContactForm
 
 CGI::Cookie::XS
 
-CGI::DataObjectMapper
-
 CGI::Debug
 
 CGI::Deurl
@@ -1289,6 +1374,8 @@ CGI::IDS
 
 CGI::Imagemap
 
+CGI::Info
+
 CGI::JSONRPC
 
 CGI::Lazy
@@ -1296,6 +1383,8 @@ CGI::Lazy
 CGI::Lazy::Auth
 
 CGI::Lazy::ModPerl
+
+CGI::Lingua
 
 CGI::List
 
@@ -1371,6 +1460,8 @@ CGI::SpeedyCGI
 
 CGI::State
 
+CGI::Struct
+
 CGI::Test
 
 CGI::URI2param
@@ -1407,6 +1498,8 @@ CLI::Application::Plugin::RC::YAML
 
 CLI::Framework
 
+CLI::Startup
+
 CLucene
 
 COPS::Client
@@ -1433,7 +1526,11 @@ CPAN::Reporter
 
 CPAN::SQLite
 
+CPAN::Search::Author
+
 CPAN::Search::Lite::Index
+
+CPAN::Search::Tester
 
 CPANPLUS
 
@@ -1442,6 +1539,8 @@ CPANPLUS::Dist::Gentoo
 CPANPLUS::Dist::Mdv
 
 CPANPLUS::Shell::Wx
+
+CPU::Z80::Disassembler
 
 CSS::Adaptor::Whitelist
 
@@ -1454,6 +1553,8 @@ CSS::Inliner
 CSS::Minifier
 
 CSS::Packer
+
+CSS::Prepare
 
 CSS::SAC
 
@@ -1483,7 +1584,13 @@ Cache::Static
 
 Cache::Weak
 
+Calculator::MortgagePayment
+
+Calendar::Bahai
+
 Calendar::CSA
+
+Calendar::Persian
 
 Calendar::TimeTable
 
@@ -1663,6 +1770,8 @@ Chart::Plot
 
 Chart::Plot::Canvas
 
+Chart::Plot::Tagged
+
 Chart::Scientific
 
 Chart::XMGR
@@ -1701,9 +1810,13 @@ Cisco::Management
 
 Cisco::Reconfig
 
+Cisco::UCS
+
 Cisco::Version
 
 CiviCRM::Client::REST
+
+Cladichat
 
 Clarion
 
@@ -1722,6 +1835,8 @@ Class::AutoloadCAN
 Class::BlackHole
 
 Class::Classless
+
+Class::Classless::C3
 
 Class::Classless::DBI
 
@@ -1789,11 +1904,15 @@ Class::Flyweight
 
 Class::GAPI
 
+Class::Generate
+
 Class::Handler
 
 Class::ISA
 
 Class::Inheritance
+
+Class::Injection
 
 Class::InsideOut
 
@@ -1895,6 +2014,8 @@ Cmenu
 
 Cobalt::LCD
 
+Code::Class::C
+
 Collision::2D
 
 Color::Calc
@@ -1903,11 +2024,15 @@ Color::Fade
 
 Color::Mix
 
+Color::Model::Munsell::Util
+
 Color::Model::RGB
 
 Color::Scheme
 
 Color::TupleEncode
+
+Combinator
 
 Commands::Guarded
 
@@ -1935,6 +2060,8 @@ Config::Apt::Sources
 
 Config::Augeas
 
+Config::Augeas::Exporter
+
 Config::BuildHelper
 
 Config::File
@@ -1944,6 +2071,8 @@ Config::Find
 Config::FreeForm
 
 Config::General
+
+Config::Hosts
 
 Config::Ini
 
@@ -2081,6 +2210,8 @@ Crypt::CBC
 
 Crypt::CBCeasy
 
+Crypt::CFB
+
 Crypt::Caesar
 
 Crypt::CipherSaber
@@ -2099,8 +2230,6 @@ Crypt::Eksblowfish::Bcrypt
 
 Crypt::FNA
 
-Crypt::FSHP
-
 Crypt::GCrypt
 
 Crypt::GOST
@@ -2111,6 +2240,8 @@ Crypt::IDA
 
 Crypt::IDEA
 
+Crypt::Image
+
 Crypt::Keys
 
 Crypt::Khazad
@@ -2120,6 +2251,8 @@ Crypt::Loki97
 Crypt::Misty1
 
 Crypt::NULL
+
+Crypt::Nettle
 
 Crypt::Noekeon
 
@@ -2193,6 +2326,8 @@ Crypt::Serpent
 
 Crypt::Shark
 
+Crypt::SimpleGPG
+
 Crypt::Skip32
 
 Crypt::Skipjack
@@ -2210,6 +2345,8 @@ Crypt::Trillian3
 Crypt::TripleDES
 
 Crypt::Twofish
+
+Crypt::URandom
 
 Crypt::UnixCrypt
 
@@ -2267,6 +2404,8 @@ DBD::Excel
 
 DBD::File
 
+DBD::Firebird
+
 DBD::FreeTDS
 
 DBD::Google
@@ -2286,6 +2425,8 @@ DBD::MaxDB
 DBD::Multi
 
 DBD::Multiplex
+
+DBD::Nagios
 
 DBD::ODBC
 
@@ -2313,6 +2454,8 @@ DBD::Salesforce
 
 DBD::Solid
 
+DBD::Spatialite
+
 DBD::Sprite
 
 DBD::Sqlflex
@@ -2327,6 +2470,8 @@ DBD::Wire10
 
 DBD::XBase
 
+DBD::cego
+
 DBD::drizzle
 
 DBD::mSQL
@@ -2338,6 +2483,8 @@ DBD::mysqlPP
 DBD::pNET
 
 DBI
+
+DBI::DDI
 
 DBI::Format
 
@@ -2355,7 +2502,11 @@ DBIx::BabelKit
 
 DBIx::Browse
 
+DBIx::BulkLoader::Mysql
+
 DBIx::CGITables
+
+DBIx::Changeset
 
 DBIx::Chart
 
@@ -2431,6 +2582,8 @@ DBIx::MSAccess::Convert2Db
 
 DBIx::MSSQLReporter
 
+DBIx::Migration::Classes
+
 DBIx::Migration::Directories
 
 DBIx::MoCo::Pageset
@@ -2469,6 +2622,8 @@ DBIx::Report::Excel
 
 DBIx::RetryOverDisconnects
 
+DBIx::RoboQuery
+
 DBIx::Roles
 
 DBIx::Romani
@@ -2485,6 +2640,8 @@ DBIx::Simple
 
 DBIx::Simple::Procedure
 
+DBIx::SimpleGoBetween
+
 DBIx::SimpleQuery
 
 DBIx::Std
@@ -2500,6 +2657,8 @@ DBIx::TableReferences::MSSQL
 DBIx::TextIndex
 
 DBIx::Timeout
+
+DBIx::Tiny
 
 DBIx::Transaction
 
@@ -2569,7 +2728,23 @@ DOCSIS::ConfigFile
 
 DWH_File
 
+Daemon::Shutdown
+
 Daemon::Simple
+
+Dancer::Logger::Pipe
+
+Dancer::Plugin::Auth::Basic
+
+Dancer::Plugin::Auth::Htpasswd
+
+Dancer::Plugin::DirectoryView
+
+Dancer::Plugin::Preprocess::Sass
+
+Dancer::Plugin::Redis
+
+Dancer::Plugin::SporeDefinitionControl
 
 Danga::Socket
 
@@ -2582,6 +2757,8 @@ Data::Alias
 Data::Binder
 
 Data::BitMask
+
+Data::BitStream
 
 Data::Buffer
 
@@ -2602,6 +2779,8 @@ Data::Denter
 Data::Describe
 
 Data::Diff
+
+Data::Dmap
 
 Data::Domain
 
@@ -2629,6 +2808,8 @@ Data::Hexdumper
 
 Data::ID::Exim
 
+Data::IPV4::Range::Parse
+
 Data::Integer
 
 Data::Iterator
@@ -2639,9 +2820,9 @@ Data::JavaScript
 
 Data::Lazy
 
-Data::Libra
-
 Data::Locations
+
+Data::MPQ
 
 Data::MaskPrint
 
@@ -2665,6 +2846,8 @@ Data::Pareto
 
 Data::Passphrase
 
+Data::Password::Filter
+
 Data::Peek
 
 Data::Postponed
@@ -2677,11 +2860,15 @@ Data::Random
 
 Data::RandomPerson
 
+Data::Range::Compare
+
 Data::Report
 
 Data::Reporter
 
 Data::Rlist
+
+Data::RoundRobinShared
 
 Data::RuledValidator
 
@@ -2698,6 +2885,8 @@ Data::SecsPack
 Data::Serializer
 
 Data::Shark
+
+Data::Sheet
 
 Data::Sofu
 
@@ -2723,13 +2912,19 @@ Data::Validate::Domain
 
 Data::Validate::IP
 
+Data::Validate::VIN
+
 Data::Variant
 
 Data::Walker
 
+DataWarehouse
+
 Datascope
 
 Date::Calc
+
+Date::CommonFormats
 
 Date::Components
 
@@ -2755,6 +2950,10 @@ Date::Holidays::AU
 
 Date::Holidays::CA
 
+Date::Holidays::IND
+
+Date::Holidays::PAK
+
 Date::Holidays::PT
 
 Date::ICal
@@ -2772,6 +2971,8 @@ Date::Manip
 Date::Namedays::Simple
 
 Date::Parse
+
+Date::Parser
 
 Date::Pcalc
 
@@ -2865,6 +3066,8 @@ Devel::CoreStack
 
 Devel::Cover
 
+Devel::Cover::Report::Clover
+
 Devel::DProf
 
 Devel::DebugInit
@@ -2891,6 +3094,8 @@ Devel::LeakTrace
 
 Devel::LineName
 
+Devel::MemoryTrace::Light
+
 Devel::Messenger
 
 Devel::Modlist
@@ -2912,6 +3117,8 @@ Devel::STrace
 Devel::SearchINC
 
 Devel::Size
+
+Devel::SlowBless
 
 Devel::SmallProf
 
@@ -2939,15 +3146,21 @@ Device::Arduino::LCD
 
 Device::CableModem::SURFboard
 
+Device::CableModem::Zoom5341
+
 Device::Cdio
 
 Device::DSE::Q1573
+
+Device::Dynamixel
 
 Device::Gsm
 
 Device::IRU::GE
 
 Device::ISDN::OCLM
+
+Device::Inverter::Aurora
 
 Device::Kiln
 
@@ -2987,6 +3200,8 @@ Device::Velleman::K8055::Fuse
 
 Device::Velleman::K8055::Server
 
+Device::Velleman::PPS10
+
 Device::WH1091
 
 Device::WxM2
@@ -2998,6 +3213,8 @@ Digest::BubbleBabble
 Digest::CMAC
 
 Digest::CRC
+
+Digest::CubeHash
 
 Digest::EMAC
 
@@ -3041,15 +3258,23 @@ Directory::Queue
 
 Directory::Scratch
 
-Dist::Zilla::Plugin::MetaNoIndex
+Dist::Zilla::Plugin::MojibakeTests
 
 Dist::Zilla::Plugin::Rsync
+
+Dist::Zilla::Plugin::SpellingCommonMistakesTests
 
 Dist::Zilla::Plugin::Subversion
 
 Dist::Zilla::Plugin::Subversion::ReleaseDist
 
 Dist::Zilla::Plugin::Subversion::Tag
+
+Dist::Zilla::Plugin::WSDL
+
+Dist::Zilla::PluginBundle::Author::LESPEA
+
+Dist::Zilla::PluginBundle::TestingMania
 
 Dist::Zilla::Role::Subversion
 
@@ -3067,6 +3292,8 @@ Dumpvalue::HTML
 
 EB
 
+EBook::Generator
+
 EBook::Tools
 
 EMC::Symcli::Symm
@@ -3078,8 +3305,6 @@ ETL::Pequel
 Egg::Release
 
 Ekahau
-
-ElectricArc
 
 Emacs
 
@@ -3103,6 +3328,8 @@ Embedix::DB
 
 Embedix::ECD
 
+Encode::Any
+
 Encode::Arabic
 
 Encode::Detect
@@ -3110,6 +3337,8 @@ Encode::Detect
 Encode::Detect::CJK
 
 Encode::Detect::Detector
+
+Encode::DosHebrew
 
 Encode::EUCJPMS
 
@@ -3187,9 +3416,9 @@ Exception::Cxx
 
 Exception::System
 
-Expect
+Exherbo::Packager
 
-Expect::Angel
+Expect
 
 Exporter::Options
 
@@ -3213,6 +3442,8 @@ FAQ::OMatic
 
 FCGI
 
+FCGI::Daemon
+
 FCGI::EV
 
 FCGI::IIS
@@ -3222,6 +3453,8 @@ FCGI::ProcManager
 FCGI::Spawn
 
 FFI
+
+FSA::Engine
 
 FUSE::Client
 
@@ -3252,8 +3485,6 @@ File::Atomic
 File::Attributes
 
 File::BSDGlob
-
-File::Backup
 
 File::Basename::Object
 
@@ -3310,6 +3541,8 @@ File::ManualFlock
 File::Mirror
 
 File::Monitor
+
+File::Monitor::Lite
 
 File::MultiTail
 
@@ -3369,6 +3602,8 @@ File::Temp
 
 File::Touch
 
+File::UStore
+
 File::VirtualPath
 
 File::Which
@@ -3417,6 +3652,8 @@ Filter::CommaEquals
 
 Filter::Crypto
 
+Filter::DisposableEmail
+
 Filter::Log4perl
 
 Filter::NumberLines
@@ -3459,9 +3696,15 @@ Finance::Bank::DE::NetBank
 
 Finance::Bank::DE::SpardaBank
 
+Finance::Bank::JP::Mizuho
+
 Finance::Bank::LaPoste
 
+Finance::Bank::NFCU
+
 Finance::Bank::NL::CLIEOP03
+
+Finance::Bank::PNC
 
 Finance::Bank::SentinelBenefits::Csv401kConverter
 
@@ -3469,7 +3712,11 @@ Finance::Bank::Smile
 
 Finance::Bank::US::INGDirect
 
+Finance::Bank::US::ShareBuilder
+
 Finance::Bank::Wachovia
+
+Finance::BankVal::UK
 
 Finance::Currency::Convert::BChile
 
@@ -3486,6 +3733,8 @@ Finance::OFX
 Finance::OFX::Parse::Simple
 
 Finance::Performance::Calc
+
+Finance::QFX
 
 Finance::Quote
 
@@ -3517,6 +3766,8 @@ FindBin
 
 FindBin::libs
 
+Finnigan
+
 Flickr::Upload
 
 Font::AFM
@@ -3528,6 +3779,8 @@ Font::Fret
 Font::TFM
 
 Font::TTF
+
+Food::ECodes
 
 Form::Factory
 
@@ -3601,6 +3854,8 @@ GD::Image::Thumbnail
 
 GD::Map
 
+GD::Persian
+
 GD::SecurityImage
 
 GD::Tab::Ukulele
@@ -3625,8 +3880,6 @@ GMail::Checker
 
 GMail::IMAPD
 
-GNTP::Growl
-
 GPS::Babel
 
 GPS::Garmin::Connect
@@ -3634,6 +3887,8 @@ GPS::Garmin::Connect
 GPS::Poi
 
 GPS::SpaceTrack
+
+GSM::Gnokii
 
 GSM::Nbit
 
@@ -3646,6 +3901,8 @@ GSS
 GStreamer
 
 GTop
+
+Game::ConnectFour
 
 Games::AIBots
 
@@ -3660,6 +3917,8 @@ Games::Bingo
 Games::Cards
 
 Games::Cards::Poker
+
+Games::ConnectFour
 
 Games::Crosswords
 
@@ -3684,6 +3943,8 @@ Games::Hack::Live
 Games::Hack::Patch::i686
 
 Games::Hack::Patch::x86_64
+
+Games::Lacuna::Client
 
 Games::Maze
 
@@ -3727,6 +3988,8 @@ Games::Sudoku::CPSearch
 
 Games::Sudoku::General
 
+Games::TicTacToe
+
 Games::Tournament::BlackJack
 
 Games::Tournament::RoundRobin
@@ -3745,7 +4008,11 @@ Ganglia::Gmetric
 
 Gantry
 
+Gapp
+
 Gas::Prices
+
+GatherScatter
 
 Gearman::XS
 
@@ -3753,9 +4020,15 @@ Gedcom
 
 Gemstone
 
+Genealogy
+
 Genezzo
 
 Geo::BUFR
+
+Geo::CEP
+
+Geo::Calc
 
 Geo::Cloudmade
 
@@ -3772,6 +4045,8 @@ Geo::Coder::YahooJapan
 Geo::Converter::dms2dd
 
 Geo::Coordinates::Convert
+
+Geo::Coordinates::ETRSTM35FIN
 
 Geo::Coordinates::OSGB
 
@@ -3841,6 +4116,8 @@ Geography::Countries::LatLong
 
 Geography::States
 
+Geometry::Formula
+
 Getargs::Long
 
 Getargs::Mixed
@@ -3849,9 +4126,13 @@ Getopt::ArgvFile
 
 Getopt::Attribute
 
+Getopt::CommandLineExports
+
 Getopt::Declare
 
 Getopt::EvaP
+
+Getopt::FileConfig
 
 Getopt::Flex
 
@@ -3881,6 +4162,8 @@ Getopt::XML
 
 Gimp::ScriptFu::Client
 
+Git::DescribeVersion
+
 Git::Github::Creator
 
 Glade
@@ -3898,6 +4181,10 @@ GnuPG
 GnuPG::Interface
 
 Goo
+
+Google::Fusion
+
+Google::GeoCoder::Smart
 
 Google::ProtocolBuffers
 
@@ -3929,6 +4216,8 @@ Graph::Writer::XML
 
 GraphViz
 
+GraphViz2
+
 Graphics::Asymptote
 
 Graphics::ColorNames
@@ -3950,6 +4239,8 @@ Growl::GNTP
 Gtk
 
 Gtk2
+
+Gtk2::Ex::CellRendererWrappedText
 
 Gtk2::Ex::DBI
 
@@ -3999,15 +4290,11 @@ HPUX::SDUX
 
 HTML::ActiveLink
 
-HTML::AjaxTags
-
-HTML::AjaxTags::Response
-
-HTML::AjaxTags::TT
-
 HTML::BBReverse
 
 HTML::BarGraph
+
+HTML::Barcode
 
 HTML::Base
 
@@ -4068,6 +4355,10 @@ HTML::Entities
 HTML::Entities::ImodePictogram
 
 HTML::Entities::Interpolate
+
+HTML::Entities::Recursive
+
+HTML::EntityReference
 
 HTML::ExtractMain
 
@@ -4143,9 +4434,13 @@ HTML::SimpleLinkExtor
 
 HTML::SimpleParse
 
+HTML::SocialMedia
+
 HTML::StickyForms
 
 HTML::Stream
+
+HTML::StripTags
 
 HTML::Stripper
 
@@ -4163,6 +4458,8 @@ HTML::TagHelper
 
 HTML::TagParser
 
+HTML::TagTree
+
 HTML::TagUtil
 
 HTML::Tagset
@@ -4177,13 +4474,13 @@ HTML::Template::Compiled::Plugin::LineBreak
 
 HTML::Template::Convert::TT
 
+HTML::Template::Parser
+
 HTML::Template::Set
 
 HTML::TokeParser
 
 HTML::Tooltip::Javascript
-
-HTML::Validator
 
 HTML::WebMake
 
@@ -4204,6 +4501,8 @@ HTML::WikiConverter::GoogleCode
 HTML::WikiConverter::Wikispaces
 
 HTML::WikiConverter::XWiki
+
+HTTP::AppServer
 
 HTTP::Body
 
@@ -4249,6 +4548,8 @@ HTTP::Headers
 
 HTTP::Link::Parser
 
+HTTP::Lint
+
 HTTP::Message
 
 HTTP::Negotiate
@@ -4277,6 +4578,8 @@ HTTP::Server:::Brick
 
 HTTP::Server::Simple::Dispatched
 
+HTTP::Sessioniser
+
 HTTP::SimpleLinkChecker
 
 HTTP::Size
@@ -4297,6 +4600,16 @@ HTTPD::Log::Filter
 
 HTTPD::UserAdmin
 
+Hadoop::Streaming
+
+Haiku::ApplicationKit
+
+Haiku::InterfaceKit
+
+Haiku::StorageKit
+
+Haiku::SupportKit
+
 Hailo
 
 Ham::APRS::DeviceID
@@ -4305,6 +4618,10 @@ Ham::APRS::FAP
 
 Ham::APRS::LastPacket
 
+Ham::Locator
+
+Ham::Reference::Callook
+
 Ham::Reference::Phonetics
 
 Ham::Reference::QRZ
@@ -4312,6 +4629,8 @@ Ham::Reference::QRZ
 Ham::Reference::Qsignals
 
 Ham::Reference::Solar
+
+Ham::WSPR
 
 Handel
 
@@ -4336,6 +4655,10 @@ Hash::NoVivify
 Hash::Transform
 
 Hash::WithDefaults
+
+Health::BFI
+
+Health::BMI
 
 Heap
 
@@ -4381,6 +4704,8 @@ Hook::PrePostCall
 
 Hook::Scope
 
+Hostfile::Manager
+
 HtDig
 
 HtDig::Htsearch
@@ -4415,6 +4740,8 @@ IO::EventMux
 
 IO::File::Lockable
 
+IO::File::WithFilename
+
 IO::LCDproc
 
 IO::Lambda
@@ -4438,6 +4765,8 @@ IO::Select
 IO::Simple
 
 IO::Socket::ByteCounter
+
+IO::Socket::DNS
 
 IO::Socket::INET::Daemon
 
@@ -4470,6 +4799,12 @@ IO::WrapTie
 IO::Zlib
 
 IP::Anonymous
+
+IP::CountryFlag
+
+IP::Info
+
+IP::Location
 
 IP::World
 
@@ -4524,6 +4859,8 @@ IPTables::IPv4::IPQueue
 IPTables::Log
 
 IPTables::libiptc
+
+IUP
 
 IkiWiki::Plugin::syntax
 
@@ -4583,7 +4920,15 @@ Image::MetaData::GQview
 
 Image::MetaData::JPEG
 
+Image::PNG
+
+Image::Placeholder
+
+Image::Resize::OpenCV
+
 Image::Size
+
+Image::SubImageFind
 
 Image::Thumbnail
 
@@ -4602,6 +4947,10 @@ Imager
 Imager::TimelineDiagram
 
 Include
+
+IncomeTax::IND
+
+IncomeTax::UK
 
 Inferno::RegMgr
 
@@ -4639,6 +4988,12 @@ Inline::Tcl
 
 Inline::WSC
 
+InterMine::Item
+
+InterMine::Model
+
+InterMine::TypeLibrary
+
 Interface::Param
 
 Ioctl
@@ -4657,9 +5012,13 @@ Iterator::IO
 
 Iterator::Misc
 
+Iterator::ToArray
+
 Iterator::Util
 
 JE
+
+JIRA::Client
 
 JMX::Jmx4Perl
 
@@ -4709,9 +5068,13 @@ Jcode
 
 Jifty
 
+Job::MapReduce
+
 Jorge
 
 Kephra
+
+KinoSearchX::Simple
 
 Konstrukt
 
@@ -4726,6 +5089,8 @@ LEGO::NXT
 LEGO::RCX
 
 LIMS::Controller
+
+LJ::GetCookieSession
 
 LSF::Hosts
 
@@ -4755,6 +5120,10 @@ LWP::UA
 
 LWP::UserAgent
 
+LWP::UserAgent::Anonymous
+
+LWP::UserAgent::ExponentialBackoff
+
 LWP::UserAgent::Mockable
 
 LWP::UserAgent::ProxyHopper
@@ -4770,6 +5139,10 @@ LaTeX::Encode
 LaTeX::Figure
 
 LaTeX::Table
+
+Labkey::Query
+
+Labkey::query
 
 Language::Basic
 
@@ -4861,6 +5234,8 @@ Lingua::Alphabet::Phonetic
 
 Lingua::Any::Numbers
 
+Lingua::Boolean
+
 Lingua::Collate
 
 Lingua::Conjunction
@@ -4906,6 +5281,8 @@ Lingua::EN::Squeeze
 Lingua::EN::Syllable
 
 Lingua::EO::Supersignoj
+
+Lingua::ES::Hyphenate
 
 Lingua::ES::Numeros
 
@@ -5055,6 +5432,10 @@ Linux::Cpuinfo
 
 Linux::DVB::DVBT
 
+Linux::DVB::DVBT::Advert
+
+Linux::DVB::DVBT::TS
+
 Linux::Distribution::Packages
 
 Linux::Fuser
@@ -5069,6 +5450,8 @@ Linux::MemInfo
 
 Linux::Pid
 
+Linux::Prctl
+
 Linux::Svgalib
 
 Linux::SysInfo
@@ -5080,6 +5463,8 @@ Linux::hddtemp
 List::Compare
 
 List::Comprehensions
+
+List::Flatten::Recursive
 
 List::Intersperse
 
@@ -5143,6 +5528,8 @@ LockFile::Scheme
 
 LockFile::Simple
 
+Log4Perl::ImportHandle
+
 Log::Accounting
 
 Log::Accounting::Sendmail
@@ -5152,6 +5539,10 @@ Log::Agent
 Log::Agent::Logger
 
 Log::Agent::Rotate
+
+Log::Any::Adapter::FileHandle
+
+Log::Any::Adapter::Mojo
 
 Log::Any::Adapter::Term
 
@@ -5176,6 +5567,8 @@ Log::Dispatch::ToTk
 Log::Dispatch::Win32EventLog
 
 Log::EmbedCmd
+
+Log::Fine
 
 Log::Handler
 
@@ -5209,9 +5602,13 @@ Logfile::EPrints
 
 Logger::Simple
 
+Lorem
+
 Lucene
 
 Lucene::Search::Highlight
+
+Lucy
 
 Luka
 
@@ -5223,27 +5620,35 @@ MARC
 
 MARC::Errorchecks
 
+MARC::Loader
+
 MARC::Record
+
+MARC::Record::Stats
+
+MARC::Transform
 
 MARC::XML
 
 MIDI
 
+MIDI::ALSA
+
 MIDI::Praxis::Variation
 
 MIDI::Tweaks
+
+MIME::Base32::Readable
 
 MIME::Base64
 
 MIME::Decoder
 
+MIME::EcoEncode
+
 MIME::Entity
 
 MIME::Head
-
-MIME::IO
-
-MIME::Latin1
 
 MIME::Lite
 
@@ -5391,6 +5796,8 @@ Mac::iPhoto::Shell
 
 Mac::iTunes
 
+Mac::iTunes::Library::XML
+
 MacOSX::Alias
 
 Mail::Address
@@ -5511,7 +5918,15 @@ Markup::Unified
 
 Marpa
 
+Marpa::Any
+
 Marpa::HTML
+
+Marpa::PP
+
+Marpa::R2
+
+Marpa::XS
 
 MasonX::Maypole
 
@@ -5569,6 +5984,8 @@ Math::Cephes
 
 Math::CheckDigits
 
+Math::ContinuedFraction
+
 Math::ConvexHull
 
 Math::Derivative
@@ -5600,6 +6017,8 @@ Math::FresnelZone
 Math::Function::Roots
 
 Math::GSL::Linalg::SVD
+
+Math::GaloisField
 
 Math::Geometry
 
@@ -5641,6 +6060,8 @@ Math::MatrixReal
 
 Math::MatrixReal::Ext1
 
+Math::ModInt
+
 Math::MultiplicationTable
 
 Math::NoCarry
@@ -5648,6 +6069,8 @@ Math::NoCarry
 Math::Orthonormalize
 
 Math::Pari
+
+Math::PercentChange
 
 Math::Polygon
 
@@ -5684,6 +6107,8 @@ Math::Random::MT::Auto
 Math::Random::MT::Perl
 
 Math::Random::Seed
+
+Math::Random::SkewNormal
 
 Math::Random::TT800
 
@@ -5733,19 +6158,29 @@ Maypole::Plugin::Authorization
 
 MediaWiki::API
 
+MediaWiki::Bot::Shell
+
 MediaWiki::DumpFile
 
+Mediainfo
+
 MegaDistro
+
+Memcached::Server
 
 Memoize::ExpireLRU
 
 Memoize::Memcached
+
+MetaPage
 
 Metadata::Base
 
 Metadata::IAFA
 
 Metadata::SOIF
+
+MetasploitExpress::Parser
 
 Mewsoft::Pagination
 
@@ -5819,9 +6254,17 @@ Module::Versions
 
 MojoX::Auth::Simple
 
+MojoX::JSON::RPC
+
 MojoX::Log::Dispatch
 
+MojoX::Redis
+
+MojoX::Session::Store::Libmemcached
+
 MojoX::UserAgent
+
+Mojolicious::Plugin::Redis
 
 Mon::Client
 
@@ -5839,11 +6282,15 @@ MoneyWorks
 
 MongoDB::Admin
 
+Monitis
+
 Mono
 
 Monotone::AutomateStdio
 
 MooseX::Documenter
+
+MooseX::Locked
 
 MooseX::MultiInitArg
 
@@ -5861,6 +6308,8 @@ MooseX::Types::Path::Class
 
 MooseX::Types::XMLSchema
 
+MouseX::Params::Validate
+
 Mozilla::Backup
 
 Mozilla::Profile
@@ -5871,9 +6320,15 @@ Msql
 
 Muck
 
+Multiplex::CMD
+
+Multiplex::TCP
+
 Music::Chord::Namer
 
 MySQL::Admin
+
+MySQL::Diff
 
 MySQL::Handler
 
@@ -5881,9 +6336,13 @@ MySQL::Log::ParseFilter
 
 MySQL::Packet
 
+MySQL::Replication
+
 MySQL::Sandbox
 
 MySQL::TableInfo
+
+MySQL::Util
 
 Myco
 
@@ -5899,6 +6358,8 @@ NEXT::init
 
 NLP::GATE
 
+NLP::Service
+
 NNML::Server
 
 Nagios::Passive
@@ -5908,6 +6369,10 @@ Nagios::Plugin::CAS
 Nagios::Plugin::SNMP
 
 Nagios::Spool::Writer
+
+Nagios::Status
+
+NcFTPd::Log::Parse
 
 Nes
 
@@ -5946,6 +6411,8 @@ Net::Amazon::SQS
 Net::Amazon::Thumbnail
 
 Net::Axigen
+
+Net::Azureus::AzSMRC
 
 Net::BEEP::Lite
 
@@ -6001,6 +6468,8 @@ Net::DHCP::Watch
 
 Net::DHCPClient
 
+Net::DHCPv6::DUID::Parser
+
 Net::DLookup
 
 Net::DNS
@@ -6017,11 +6486,15 @@ Net::DNS::SEC
 
 Net::DNS::SEC::Validator
 
+Net::DNS::Sinkhole
+
 Net::DNS::TestNS
 
 Net::DNS::ValueDomain::DDNS
 
 Net::DNS::Zone::Parser
+
+Net::DNS::ZoneParse
 
 Net::DRI
 
@@ -6095,6 +6568,8 @@ Net::ICal
 
 Net::IDN::Encode
 
+Net::IM
+
 Net::IMAP
 
 Net::IMAP::Simple
@@ -6102,6 +6577,8 @@ Net::IMAP::Simple
 Net::INET6Glue
 
 Net::IP::Match::XS
+
+Net::IP::RangeCompare
 
 Net::IP::XS
 
@@ -6129,11 +6606,15 @@ Net::LDAP
 
 Net::LDAP::Extension::eDirectoryPassword
 
+Net::LDAP::Filter::SQL
+
 Net::LDAPapi
 
 Net::LMTP
 
 Net::LPR
+
+Net::LastFMAPI
 
 Net::LibLO
 
@@ -6165,6 +6646,8 @@ Net::Netmask
 
 Net::Netrc
 
+Net::OAuth::Simple::AuthHeader
+
 Net::OBEX
 
 Net::OBEX::FTP
@@ -6178,6 +6661,8 @@ Net::OSCAR
 Net::OpenID::Server::Standalone
 
 Net::OpenSRS
+
+Net::OpenSRS::Email_APP
 
 Net::OpenSoundControl
 
@@ -6208,6 +6693,8 @@ Net::Pavatar
 Net::Pcap
 
 Net::Pcap::Reassemble
+
+Net::PcapWriter
 
 Net::Peep
 
@@ -6243,6 +6730,8 @@ Net::SDP
 
 Net::SFTP
 
+Net::SFTP::Expect
+
 Net::SFTP::SftpServer
 
 Net::SIP
@@ -6251,7 +6740,11 @@ Net::SMPP
 
 Net::SMS
 
+Net::SMS::160By2
+
 Net::SMS::2Way
+
+Net::SMS::ArxMobile
 
 Net::SMS::BulkSMS
 
@@ -6259,11 +6752,17 @@ Net::SMS::Cellsynt
 
 Net::SMS::Clickatell
 
+Net::SMS::Clickatell:SOAP
+
 Net::SMS::Genie
 
 Net::SMS::LogicSMS
 
 Net::SMS::MessageNet
+
+Net::SMS::MunduSMS
+
+Net::SMS::O2_DE
 
 Net::SMS::TMobile::UK
 
@@ -6282,6 +6781,8 @@ Net::SMTP::TLS
 Net::SNMP
 
 Net::SNMP::Interfaces
+
+Net::SNMP::Util
 
 Net::SNMP::Vendor
 
@@ -6306,6 +6807,8 @@ Net::SSLeay
 Net::STOMP::Client
 
 Net::Server
+
+Net::Server::Mail::ESMTP::STARTTLS
 
 Net::Server::Mail::ESMTP::XFORWARD
 
@@ -6451,6 +6954,10 @@ News::Newsrc
 
 News::Search
 
+NexposeSimpleXML::Parser
+
+Nginx::Engine
+
 Nikto::Parser
 
 Nmap::Scanner
@@ -6493,6 +7000,8 @@ Numbers::Base::DWIM
 
 O
 
+ODF::lpOD
+
 OLE::PropertySet
 
 OLE::Storage
@@ -6513,6 +7022,10 @@ OS2::REXX
 
 OS2::UPM
 
+OSDial
+
+OWL::Simple::Parser
+
 Oak
 
 ObjStore
@@ -6520,6 +7033,10 @@ ObjStore
 Object::AutoAccessor
 
 Object::Exercise
+
+Object::GlobalContainer
+
+Object::Import
 
 Object::Info
 
@@ -6529,11 +7046,17 @@ Object::Iterate
 
 Object::Mapper
 
+Object::New
+
 Object::Realize::Later
 
 Object::Trampoline
 
 Object::Transaction
+
+Ogg::LibOgg
+
+Ogg::Theora::LibTheora
 
 Ogg::Vorbis::Header
 
@@ -6635,6 +7158,12 @@ PDL
 
 PDL::Fit::Levmar
 
+PDL::Graphics::Gnuplot
+
+PDL::Graphics::PLplot
+
+PDL::IO::Export2D
+
 PDL::IO::HDF5
 
 PDL::LAPACK
@@ -6683,7 +7212,11 @@ PICA::Record
 
 PIX::Walker
 
-POE::API::Hooks
+PNI
+
+POD2::ES
+
+POE
 
 POE::API::Peek
 
@@ -6696,6 +7229,8 @@ POE::Component::CPAN::SQLite::Info
 POE::Component::Client::FTP
 
 POE::Component::Client::HTTP
+
+POE::Component::Client::Kismet
 
 POE::Component::Client::MPD
 
@@ -6767,7 +7302,7 @@ POE::Component::Pool::Thread
 
 POE::Component::Proxy::TCP
 
-POE::Component::RSS
+POE::Component::Resolver
 
 POE::Component::SSLify::NonBlock
 
@@ -6775,9 +7310,9 @@ POE::Component::Server::AsyncEndpoint
 
 POE::Component::Server::HTTP
 
-POE::Component::Server::Syslog
+POE::Component::Server::REST
 
-POE::Component::SubWrapper
+POE::Component::Server::Syslog
 
 POE::Component::TFTPd
 
@@ -6799,8 +7334,6 @@ POE::Component::WWW::YouTube::VideoURI
 
 POE::Component::WebService::Validator::HTML::W3C
 
-POE::Exceptions
-
 POE::Filter::ErrorProof
 
 POE::Filter::FSSocket
@@ -6816,8 +7349,6 @@ POE::Loop::Glib
 POE::Loop::Wx
 
 POE::Session
-
-POE::Session::Cascading
 
 POOF
 
@@ -6853,6 +7384,8 @@ Palm::SMS
 
 Paper::Specs
 
+Parallel::Application
+
 Parallel::Cluster
 
 Parallel::Fork::BossWorkerAsync
@@ -6862,6 +7395,8 @@ Parallel::ForkManager
 Parallel::Pvm
 
 Parallel::Queue
+
+Parallel::Supervisor
 
 Params::Attr
 
@@ -6889,6 +7424,8 @@ Parse::Dia::SQL
 
 Parse::ErrorString::Perl
 
+Parse::FSM
+
 Parse::FixedLength
 
 Parse::Flash::Cookie
@@ -6897,13 +7434,15 @@ Parse::GEDA::Gschem
 
 Parse::Gnaw
 
+Parse::HP::ACU
+
 Parse::Krb5::Config
 
 Parse::Lex
 
 Parse::Lexer
 
-Parse::Marpa
+Parse::Log::OpenSSH::SFTP
 
 Parse::MediaWikiDump
 
@@ -6997,7 +7536,11 @@ PerlIO::via::gzip
 
 PerlMenu
 
+PerlMongers::Bangalore
+
 PerlMongers::Warszawa
+
+PerlPanel
 
 PerlPoint::Package
 
@@ -7023,6 +7566,8 @@ Persistent::mSQL
 
 Pg
 
+Pg::BulkCopy
+
 Physics::Particles
 
 Physics::Solar::VSO
@@ -7033,13 +7578,19 @@ Physics::Springs::Friction
 
 Physics::Unit
 
+PidFile
+
 PixDraw
 
 Plack::Middleware::AMF
 
 Plack::Middleware::Access
 
+Plack::Middleware::ESI
+
 Plack::Middleware::Session::SerializedCookie
+
+Plagger::Plugin::Publish::Reddit
 
 Plex
 
@@ -7105,9 +7656,13 @@ Pod::Snippets
 
 Pod::SpeakIT::MacSpeech
 
+Pod::Stupid
+
 Pod::Tree
 
 Pod::Usage
+
+Pod::Weaver::Plugin::StopWords
 
 Pod::WikiText
 
@@ -7172,6 +7727,8 @@ Postgres::Handler
 Prima
 
 PrimeTime::Report
+
+Printer::HP::Display
 
 Proc::Background
 
@@ -7265,6 +7822,8 @@ Quota::OO
 
 R3
 
+R::YapRI
+
 RADIUS::Dictionary
 
 RADIUS::Packet
@@ -7285,6 +7844,8 @@ RDF::Redland
 
 RDF::Service
 
+RDF::Trine
+
 RDR::Collection
 
 REST::Google::Apps::EmailSettings
@@ -7300,6 +7861,8 @@ RFID::EPC
 RFID::ISO15693::Tag
 
 RFID::Matrics
+
+RPC::ExtDirect
 
 RPC::ONC
 
@@ -7327,9 +7890,13 @@ RPM::Make::DWIW
 
 RPSL
 
+RRD::Editor
+
 RRDTool::Creator
 
 RSH::Logging
+
+RSS::NewsFeed::BBC
 
 RT
 
@@ -7347,7 +7914,11 @@ RTF::Tokenizer
 
 RTG::Report
 
+RTMP::Client
+
 RTSP::Lite
+
+RTx::AttachmentZip
 
 RTx::BecomeUser
 
@@ -7357,6 +7928,10 @@ RTx::Shredder
 
 RWDE
 
+Radio::ProgrammesSchedules::BBC
+
+Range::String
+
 Ratpoison
 
 Ravenel
@@ -7364,6 +7939,14 @@ Ravenel
 Rcs
 
 Readonly
+
+Redis::Queue
+
+Redis::hiredis
+
+RedisDB
+
+Reflex
 
 Regexp::Assemble
 
@@ -7380,6 +7963,8 @@ Regexp::Genex
 Regexp::Keywords
 
 Regexp::MultiLanguage
+
+Regexp::RegGrp
 
 Regexp::Shellish
 
@@ -7421,6 +8006,8 @@ RiveScript
 
 Robotics
 
+Robotics::IRobot
+
 Roman
 
 Rose
@@ -7449,6 +8036,8 @@ Router::LG
 
 Router::Statistics
 
+SAFT
+
 SAP::Rfc
 
 SAS::Parser
@@ -7473,6 +8062,8 @@ SGML::SPGrove
 
 SGMLS
 
+SIAM
+
 SICStus
 
 SIL::Shoe
@@ -7487,6 +8078,8 @@ SMS::Send::TW::HiAir
 
 SMS::Send::TW::PChome
 
+SMS::Send::TW::Qma
+
 SMS::Send::TW::ShareSMS
 
 SMS::Send::UK::Kapow
@@ -7498,6 +8091,8 @@ SMS::Send::Wadja
 SMS::Server::Tools
 
 SNMP
+
+SNMP::Agent
 
 SNMP::BridgeQuery
 
@@ -7520,6 +8115,8 @@ SOAP::Data::ComplexType
 SOAP::MySOAP
 
 SOAP::Transport::HTTP::Nginx
+
+SOAP::UMRA
 
 SOAP::WSDL
 
@@ -7554,6 +8151,8 @@ SQL::Statement
 SQL::Tidy
 
 SQL::Translator
+
+SQL::Yapp
 
 SRCE::Client
 
@@ -7645,11 +8244,11 @@ Schedule::Load
 
 Schedule::Match
 
+Schedule::Pluggable
+
 Schedule::Week
 
 Scope::Upper
-
-Script::Sub::Import
 
 Script::Toolbox
 
@@ -7673,6 +8272,8 @@ Search::Xapian
 
 Security::CVSS
 
+SemanticWeb::OAI::ORE
+
 Sendmail::AccessDB
 
 Sendmail::Milter
@@ -7693,7 +8294,13 @@ Set::Crontab
 
 Set::CrossProduct
 
+Set::DynamicGroups
+
+Set::FA
+
 Set::Files
+
+Set::Functional
 
 Set::Groups
 
@@ -7706,6 +8313,8 @@ Set::IntRange
 Set::IntSpan
 
 Set::IntSpan::Island
+
+Set::IntervalTree
 
 Set::NestedGroups
 
@@ -7737,19 +8346,7 @@ Silly::StringMaths
 
 Silly::Werder
 
-Simo
-
-Simo::Constrain
-
-Simo::Error
-
-Simo::Manual
-
-Simo::Manual::Japanese
-
-Simo::Util
-
-Simo::Wrapper
+SimpleStringsService::Client
 
 Simulation::Automate
 
@@ -7776,6 +8373,8 @@ Sledge::Plugin::Prototype
 Sledge::Plugin::QueryHash
 
 Sledge::Template::ClearSilver::I18N
+
+Sledge::Template::Xslate
 
 SnitchD
 
@@ -7817,6 +8416,8 @@ Solr
 
 Solstice
 
+Sorauta::Util::Iterator
+
 Sort::ArbBiLex
 
 Sort::Bucket
@@ -7847,6 +8448,8 @@ Splash::DB
 
 Splunk
 
+Sport::Analytics::SimpleRanking
+
 Spread::Client
 
 Spreadsheet::ParseExcel
@@ -7861,11 +8464,15 @@ Spreadsheet::WriteExcel::Worksheet::SheetProtection
 
 Sprite
 
+Squid::Guard
+
 Sslscan::Parser
 
 Stat::lsMode
 
 Statistics::ANOVA
+
+Statistics::Autocorrelation
 
 Statistics::Benford
 
@@ -7929,6 +8536,8 @@ Statistics::PointEstimation
 
 Statistics::ROC
 
+Statistics::RVector
+
 Statistics::Robust
 
 Statistics::SDT
@@ -7936,6 +8545,16 @@ Statistics::SDT
 Statistics::SPC
 
 Statistics::Sequences
+
+Statistics::Sequences::Joins
+
+Statistics::Sequences::Pot
+
+Statistics::Sequences::Runs
+
+Statistics::Sequences::Turns
+
+Statistics::Sequences::Vnomes
 
 Statistics::Smoothing::SGT
 
@@ -7948,6 +8567,14 @@ Statistics::Synchrony
 Statistics::TTest
 
 Statistics::Test::WilcoxonRankSum
+
+Statistics::Zed
+
+Statistics::embedR
+
+Storm
+
+StormX::Query::DeleteWhere
 
 Stream::Reader
 
@@ -7991,6 +8618,12 @@ String::Simrank
 
 String::Strip
 
+String::Substitution
+
+String::Trim
+
+String::Unique
+
 String::Urandom
 
 String::Util
@@ -8024,6 +8657,8 @@ Sub::Recursive
 Sub::Regex
 
 Sub::Timebound
+
+SugarSync::API
 
 Sun::Solaris::Exacct
 
@@ -8103,23 +8738,45 @@ SyslogScan::SyslogEntry
 
 System2
 
+System::Timeout
+
 SystemC::Netlist
 
 SystemC::Parser
 
 SystemC::Vregs
 
+TAIR::Blast
+
+TAIR::GeneDescriptions
+
 TAP::Formatter::JUnit
+
+TAP::Formatter::Spreadsheet
 
 TAP::Harness::JUnit
 
 TCP::Rebuild
+
+TCPServer::Interface
 
 TFTP
 
 TL1::Toolkit
 
 TL1ng
+
+TV::ProgrammesSchedules::BBC
+
+TV::ProgrammesSchedules::Colors
+
+TV::ProgrammesSchedules::SAB
+
+TV::ProgrammesSchedules::STAR
+
+TV::ProgrammesSchedules::Sony
+
+TV::ProgrammesSchedules::ZEE
 
 Taint
 
@@ -8129,7 +8786,11 @@ Tamino
 
 Tangram
 
+Tapper
+
 Task::Catalyst::Tutorial
+
+Task::Gtk2
 
 TaskForest
 
@@ -8138,6 +8799,8 @@ Tasks
 Tcl
 
 Tcl::Tk
+
+TeX::AutoTeX
 
 TeX::Convert::Image
 
@@ -8157,11 +8820,15 @@ Template::Alloy
 
 Template::DBI
 
+Template::Directive::XSSAudit
+
 Template::GD
 
 Template::Like
 
 Template::Multilingual
+
+Template::Mustache
 
 Template::Plugin::ASCIITable
 
@@ -8181,7 +8848,13 @@ Template::Plugin::Digest::SHA1
 
 Template::Plugin::Duration
 
+Template::Plugin::Filter::ANSIColor
+
 Template::Plugin::HTML::BBCode
+
+Template::Plugin::JA::Fold
+
+Template::Plugin::JSON::Escape
 
 Template::Plugin::LLHash
 
@@ -8204,6 +8877,8 @@ Template::Plugin::Trac
 Template::Plugin::Translit::RU
 
 Template::Plugin::TwoStage
+
+Template::Plugin::UTF8toANSI
 
 Template::Plugin::YUI2::Loader
 
@@ -8231,6 +8906,8 @@ Term::Interact
 
 Term::Menu
 
+Term::Menu::Hierarchical
+
 Term::Menus::FromFile
 
 Term::ProgressBar
@@ -8239,11 +8916,15 @@ Term::Prompt
 
 Term::Query
 
+Term::RawInput
+
 Term::ReadKey
 
 Term::ReadLine::Gnu
 
 Term::ReadLine::Perl
+
+Term::RouterCLI
 
 Term::Screen
 
@@ -8265,6 +8946,8 @@ Test::AskAnExpert
 
 Test::Assert
 
+Test::Builder::Clutch
+
 Test::CPANpm
 
 Test::CallFlow
@@ -8275,6 +8958,8 @@ Test::Cmd
 
 Test::ConsistentVersion
 
+Test::Cucumber
+
 Test::Data
 
 Test::DataLoader::MySQL
@@ -8284,6 +8969,8 @@ Test::DistManifest
 Test::Dynamic
 
 Test::Env
+
+Test::Excel
 
 Test::Exception
 
@@ -8305,6 +8992,8 @@ Test::Glade
 
 Test::GreaterVersion
 
+Test::Groonga
+
 Test::Group
 
 Test::HTML::W3C
@@ -8313,11 +9002,17 @@ Test::HTTPStatus
 
 Test::ISBN
 
+Test::JUTE
+
 Test::LectroTest
 
 Test::Litmus
 
 Test::Manifest
+
+Test::Mini
+
+Test::Mini::Unit
 
 Test::Mock::LWP::Dispatch
 
@@ -8333,6 +9028,8 @@ Test::MockTime
 
 Test::Module::Used
 
+Test::Mojibake
+
 Test::More
 
 Test::MultiFork
@@ -8342,6 +9039,8 @@ Test::NoPlan
 Test::Number::Delta
 
 Test::Numeric
+
+Test::Pcuke
 
 Test::Perl::Metrics::Simple
 
@@ -8375,6 +9074,8 @@ Test::Reporter::Transport::Outlook
 
 Test::SFTP
 
+Test::SVN::Repo
+
 Test::Signature
 
 Test::Simple
@@ -8383,11 +9084,15 @@ Test::Singleton
 
 Test::Slow
 
+Test::Spec
+
 Test::Spelling
 
 Test::Structures::Data
 
 Test::Suite
+
+Test::Syntax::Aggregate
 
 Test::TempDatabase
 
@@ -8417,6 +9122,8 @@ Test::XML::Element
 
 Test::XML::Order
 
+Test::XMLElement
+
 Test::YAML::Valid
 
 Text::A2E
@@ -8426,6 +9133,8 @@ Text::ASCIIMathML
 Text::ASCIITable
 
 Text::Affixes
+
+Text::Authinfo
 
 Text::Balanced
 
@@ -8485,13 +9194,13 @@ Text::FastTemplate
 
 Text::FillIn
 
-Text::FindLinks
-
 Text::FixEOL
 
 Text::Flowchart::Script
 
 Text::Format
+
+Text::Format::Screenplay
 
 Text::Fracture
 
@@ -8643,6 +9352,8 @@ TiVo::HME
 
 Tibco::Rv
 
+TidyAndCommit
+
 Tie::AliasHash
 
 Tie::Array::AsHash
@@ -8658,6 +9369,8 @@ Tie::Assert
 Tie::CPHash
 
 Tie::Cache
+
+Tie::Cache::Autoupdater
 
 Tie::Cache::LRU
 
@@ -8729,6 +9442,8 @@ Tie::LDAP
 
 Tie::LLHash
 
+Tie::LevelDB
+
 Tie::ListKeyedHash
 
 Tie::MmapArray
@@ -8748,6 +9463,8 @@ Tie::Proxy::Changes
 Tie::Queue
 
 Tie::RDBM
+
+Tie::REHash
 
 Tie::RangeHash
 
@@ -8784,6 +9501,8 @@ Tie::TransactHash
 Tie::Util
 
 Tie::Watch
+
+Tie::Wx::Widget
 
 Tie::iCal
 
@@ -8831,6 +9550,8 @@ Time::Seconds
 
 Time::Simple::Range
 
+Time::Stamp
+
 Time::Stopwatch
 
 Time::TAI64
@@ -8871,6 +9592,8 @@ Tk::Canvas::GradientColor
 
 Tk::Carp
 
+Tk::Chart
+
 Tk::CheckBox
 
 Tk::ChildNotification
@@ -8910,6 +9633,8 @@ Tk::DirSelect
 Tk::DoCommand
 
 Tk::DoubleClick
+
+Tk::Dressing
 
 Tk::DynaTabFrame
 
@@ -9021,6 +9746,8 @@ Tk::ProgressBar
 
 Tk::ProgressBar::Mac
 
+Tk::ROSyntaxText
+
 Tk::ReportBox
 
 Tk::RotCanvas
@@ -9119,9 +9846,13 @@ Tkx::SplashScreen
 
 Toc
 
+TomTom::WEBFLEET::Connect
+
 ToolSet::y
 
 ToolTalk
+
+Travel::UK::London::Tube
 
 Tree
 
@@ -9149,6 +9880,12 @@ Tree::Ternary_XS
 
 Tree::Trie
 
+Tribunais
+
+Tribunais::TJES
+
+Tribunais::TRTES
+
 Triggermail
 
 Tripletail
@@ -9167,6 +9904,8 @@ UML::State
 
 UMLS::Interface
 
+UMLS::SenseRelate
+
 UMLS::Similarity
 
 URI::Attr
@@ -9174,6 +9913,8 @@ URI::Attr
 URI::Bookmark
 
 URI::Bookmarks
+
+URI::Dispatch
 
 URI::Escape
 
@@ -9189,11 +9930,19 @@ URI::URL
 
 URI::virtual
 
+USB::Descriptor
+
+UTM5::URFAClient
+
+UTM5::URFAClient::Daemon
+
 UUID
 
 UUID::Tiny
 
 Ubigraph
+
+Unicode::Casing
 
 Unicode::EastAsianWidth
 
@@ -9251,6 +10000,10 @@ VCS::SCCS
 
 VCS::StarTeam
 
+VKontakte::API
+
+VKontakte::API::OAuth
+
 VMS::Device
 
 VMS::Fileutils::Root
@@ -9295,17 +10048,17 @@ VRML::VRML1
 
 VRML::VRML2
 
-Validator::Custom::HTMLForm
-
-Validator::Custom::HTMLForm::Constraints
-
-Validator::Custom::Trim
+Validate::Tiny
 
 Var::State
+
+VarGuard
 
 Variable::Alias
 
 Variable::Magic
+
+VendorAPI::2Checkout::Client
 
 Verilog::CodeGen
 
@@ -9321,15 +10074,21 @@ Verilog::Readmem
 
 Verilog::SigParser
 
+Video::CPL
+
 Video::Dumper::QuickTime
 
 Video::FFmpeg
+
+Video::Flvstreamer
 
 Video::ZVBI
 
 VideoLan::Client
 
 VideoLan::Client::Media
+
+Vim::Debug
 
 Visio
 
@@ -9375,6 +10134,8 @@ WWW::BF2Player
 
 WWW::BF2S
 
+WWW::BTjunkie
+
 WWW::BetFair::Sports::FreeAPI
 
 WWW::Bleep
@@ -9391,7 +10152,7 @@ WWW::CPANRatings::RSS
 
 WWW::Cache::Google
 
-WWW::Collmex
+WWW::Correios::CEP
 
 WWW::DHL
 
@@ -9405,11 +10166,15 @@ WWW::Discogs
 
 WWW::DomainTools
 
+WWW::EchoNest
+
 WWW::Extractor
 
 WWW::Forge
 
 WWW::Formspring
+
+WWW::Foursquare::RSS
 
 WWW::FreeProxy
 
@@ -9421,13 +10186,39 @@ WWW::Fuel::US::Prices
 
 WWW::GameMonitor
 
+WWW::Geni
+
+WWW::GoodData
+
+WWW::Google::APIDiscovery
+
+WWW::Google::Buzz
+
+WWW::Google::CustomSearch
+
+WWW::Google::Diacritize
+
+WWW::Google::DistanceMatrix
+
+WWW::Google::Moderator
+
 WWW::Google::PageRank
+
+WWW::Google::PageSpeedOnline
+
+WWW::Google::Places
 
 WWW::Google::SiteMap
 
+WWW::Google::URLShortener
+
 WWW::Google::Voice
 
+WWW::Hackernews::Parser
+
 WWW::Honeypot::httpBL
+
+WWW::HtmlUnit::Spidey
 
 WWW::ImageSpool
 
@@ -9435,13 +10226,21 @@ WWW::ImagebinCa::Create
 
 WWW::ImagebinCa::Retrieve
 
+WWW::Imgur
+
 WWW::Indeed
 
 WWW::InstaMapper
 
 WWW::Instapaper::Client
 
+WWW::LaQuinta::Returns
+
 WWW::LargeFileFetcher
+
+WWW::Live::Auth
+
+WWW::Live::Contacts
 
 WWW::Lunarstorm
 
@@ -9461,9 +10260,13 @@ WWW::Mechanize::Plugin::FollowMetaRedirect
 
 WWW::Mechanize::Plugin::JavaScript
 
+WWW::MediaTemple
+
 WWW::Metaweb
 
 WWW::Monitor
+
+WWW::MovieReviews::NYT
 
 WWW::MyNewsletterBuilder
 
@@ -9479,9 +10282,17 @@ WWW::NicoVideo
 
 WWW::Nike::NikePlus
 
+WWW::NzbMatrix
+
+WWW::OReillyMedia::Store
+
+WWW::Offline::Toolkit
+
 WWW::OhNoRobotCom::Search
 
 WWW::Opentracker::Stats
+
+WWW::Oyster
 
 WWW::PAUSE::CleanUpHomeDir
 
@@ -9509,6 +10320,8 @@ WWW::Postini
 
 WWW::ProxyChecker
 
+WWW::RedditAPI
+
 WWW::Robot
 
 WWW::RobotRules
@@ -9524,6 +10337,8 @@ WWW::Scraper::ISBN
 WWW::Scraper::ISBN::LibUniIt_Driver
 
 WWW::Scraper::ISBN::LibUniverIt::Driver
+
+WWW::Scraper::Mediathek
 
 WWW::Scripter
 
@@ -9561,6 +10376,10 @@ WWW::Search::UrbanDictionary
 
 WWW::Search::Yahoo
 
+WWW::SearchWikipedia
+
+WWW::Selenium::NetworkCapture
+
 WWW::SherlockSearch
 
 WWW::ShopBot
@@ -9568,6 +10387,8 @@ WWW::ShopBot
 WWW::Shorten::Bitly
 
 WWW::Shorten::Digg
+
+WWW::Shorten::SuPr
 
 WWW::Shorten::URLchen
 
@@ -9599,13 +10420,23 @@ WWW::Translate::Apertium
 
 WWW::Translate::interNOSTRUM
 
+WWW::TubeUpdates
+
 WWW::TwentyQuestions
 
 WWW::Twitpic
 
 WWW::Twittervision
 
+WWW::Txodds
+
+WWW::TypePad
+
 WWW::URLToys
+
+WWW::VirtualPBX
+
+WWW::WebPAC
 
 WWW::Webjay
 
@@ -9613,11 +10444,13 @@ WWW::WolframAlpha
 
 WWW::Wuala
 
+WWW::Wunderground::API
+
 WWW::Yahoo::DrivingDirections
 
 WWW::Yahoo::InboundLinks
 
-WWW::YahooJapan::KanaAddress
+WWW::Yahoo::Smushit
 
 WWW::Yandex::MailForDomain
 
@@ -9628,6 +10461,8 @@ WWW::eiNetwork
 WWW::iTunesConnect
 
 WWW::phpBB
+
+WWW:Google::ShortLink
 
 Waft::JSON
 
@@ -9645,7 +10480,11 @@ Weather::Airport
 
 Weather::Google
 
+Weather::NOAA::Alert
+
 Weather::NOAA::GFS
+
+Weather::TW
 
 Weather::Underground::StationHistory
 
@@ -9658,6 +10497,10 @@ Web::Scaffold
 WebCache::Digest
 
 WebFS::FileCopy
+
+WebNano
+
+WebService::Amazon::Route53
 
 WebService::BabelFish
 
@@ -9679,6 +10522,8 @@ WebService::FC2::SpamAPI
 
 WebService::FreeDB
 
+WebService::GData
+
 WebService::Geograph::API
 
 WebService::Google::Contact
@@ -9686,6 +10531,8 @@ WebService::Google::Contact
 WebService::Google::Language
 
 WebService::Google::Reader
+
+WebService::Gravatar
 
 WebService::Hatena::Bookmark::Lite
 
@@ -9699,6 +10546,8 @@ WebService::Kaolabo
 
 WebService::KuronekoYamato
 
+WebService::LOC::CongRec
+
 WebService::Linode
 
 WebService::Mappoint
@@ -9711,15 +10560,27 @@ WebService::MusicBrainz
 
 WebService::Rakuten
 
+WebService::SOS
+
+WebService::ScormCloud
+
+WebService::Soundcloud
+
 WebService::TVRage
 
 WebService::Upcoming
 
+WebService::Uptrack
+
 WebService::Validator::HTML::W3C::Fast
+
+WebService::VaultPress::Partner
 
 WebService::Viddler
 
 WebService::Wedata
+
+WebService::Wikimapia
 
 WebService::YQL
 
@@ -9727,11 +10588,25 @@ WebService::Yelp
 
 WebService::YouTube
 
+WebService::Zabbix
+
+WebService::Zoopla::API
+
 WebSphere::MQTT::Client
 
 WebSphere::Payment
 
 Webalizer::Hist
+
+Weblogic::UserAdmin
+
+Webservice::InterMine
+
+Webservice::InterMine::Bio
+
+Webservice::Tesco::API
+
+Webservice::Vtiger
 
 Webservice::Yandex::Suggest
 
@@ -9874,6 +10749,8 @@ Win32::OLE
 Win32::OLE::OPC
 
 Win32::Outlook::IAF
+
+Win32::PEFile
 
 Win32::PerfMon
 
@@ -10029,6 +10906,10 @@ X500::DN::Parser
 
 X500::RDN
 
+X86::Disasm
+
+X86::Udis86
+
 X::Osd
 
 XBase
@@ -10070,6 +10951,8 @@ XML::DT
 XML::DTD
 
 XML::DTDParser
+
+XML::Debian::ENetInterfaces
 
 XML::Descent
 
@@ -10247,19 +11130,27 @@ Xymon::Monitor::Informix
 
 YAML
 
+YAML::Accessor
+
 YAML::Object
 
 Yahoo::Marketing
 
 Yahoo::Search
 
+Zabbix::Sender
+
 Zefy
+
+Zenoss
 
 Zeta
 
 ZipTie
 
 aLid
+
+arXiv
 
 autobox::List::Util
 
@@ -10303,6 +11194,8 @@ iCal::Parser::HTML
 
 iCal::Parser::SAX
 
+lib::App::Guiio
+
 namespace
 
 re::engine::LPEG
@@ -10316,6 +11209,10 @@ xDash
 =head1 CHANGES
 
 =over 4
+
+=item 0.06
+
+Module Update.  Add disclaimer.
 
 =item 0.05
 
